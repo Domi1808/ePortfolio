@@ -2,91 +2,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dominik Tabernig - ePortfolio</title>
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Tailwind Config for Custom Colors/Fonts -->
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        navy: {
-                            900: '#0B1121',
-                            950: '#020617', // Main background
-                        },
-                        accent: {
-                            400: '#60A5FA', // Vivid blue
-                            500: '#3B82F6',
-                            600: '#2563EB',
-                        }
-                    },
-                    boxShadow: {
-                        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
-                        'glow': '0 0 40px -10px rgba(59, 130, 246, 0.3)',
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+          theme: {
+              extend: {
+                  fontFamily: {
+                      sans: ['Inter', 'sans-serif'],
+                  },
+                  colors: {
+                      navy: {
+                          900: '#0B1121',
+                          950: '#020617', // Main background
+                      },
+                      accent: {
+                          400: '#60A5FA', // Vivid blue
+                          500: '#3B82F6',
+                          600: '#2563EB',
+                      }
+                  },
+                  boxShadow: {
+                      'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
+                      'glow': '0 0 40px -10px rgba(59, 130, 246, 0.3)',
+                  }
+              }
+          }
+      }
     </script>
 
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        /* Custom scrollbar for webkit */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #020617; 
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #1e293b; 
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #334155; 
-        }
-        
-        .glass-card {
-            background: rgba(15, 23, 42, 0.6);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-        
-        .glass-nav {
-            background: rgba(2, 6, 23, 0.7);
-            backdrop-filter: blur(16px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
+      /* Custom scrollbar for webkit */
+      ::-webkit-scrollbar {
+          width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+          background: #020617;
+      }
+      ::-webkit-scrollbar-thumb {
+          background: #1e293b;
+          border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+          background: #334155;
+      }
 
-        /* Gradient Text */
-        .text-gradient {
-            background: linear-gradient(to right, #ffffff, #94a3b8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+      .glass-card {
+          background: rgba(15, 23, 42, 0.6);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .glass-nav {
+          background: rgba(2, 6, 23, 0.7);
+          backdrop-filter: blur(16px);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      /* Gradient Text */
+      .text-gradient {
+          background: linear-gradient(to right, #ffffff, #94a3b8);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+      }
     </style>
-<link id="all-fonts-link-font-geist" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist">.font-geist { font-family: 'Geist', sans-serif !important; }</style><link id="all-fonts-link-font-roboto" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-roboto">.font-roboto { font-family: 'Roboto', sans-serif !important; }</style><link id="all-fonts-link-font-montserrat" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-montserrat">.font-montserrat { font-family: 'Montserrat', sans-serif !important; }</style><link id="all-fonts-link-font-poppins" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-poppins">.font-poppins { font-family: 'Poppins', sans-serif !important; }</style><link id="all-fonts-link-font-playfair" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&amp;display=swap"><style id="all-fonts-style-font-playfair">.font-playfair { font-family: 'Playfair Display', serif !important; }</style><link id="all-fonts-link-font-instrument-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-instrument-serif">.font-instrument-serif { font-family: 'Instrument Serif', serif !important; }</style><link id="all-fonts-link-font-merriweather" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;display=swap"><style id="all-fonts-style-font-merriweather">.font-merriweather { font-family: 'Merriweather', serif !important; }</style><link id="all-fonts-link-font-bricolage" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-bricolage">.font-bricolage { font-family: 'Bricolage Grotesque', sans-serif !important; }</style><link id="all-fonts-link-font-jakarta" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-jakarta">.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif !important; }</style><link id="all-fonts-link-font-manrope" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-manrope">.font-manrope { font-family: 'Manrope', sans-serif !important; }</style><link id="all-fonts-link-font-space-grotesk" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-space-grotesk">.font-space-grotesk { font-family: 'Space Grotesk', sans-serif !important; }</style><link id="all-fonts-link-font-work-sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-work-sans">.font-work-sans { font-family: 'Work Sans', sans-serif !important; }</style><link id="all-fonts-link-font-pt-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-pt-serif">.font-pt-serif { font-family: 'PT Serif', serif !important; }</style><link id="all-fonts-link-font-geist-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist-mono">.font-geist-mono { font-family: 'Geist Mono', monospace !important; }</style><link id="all-fonts-link-font-space-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-space-mono">.font-space-mono { font-family: 'Space Mono', monospace !important; }</style><link id="all-fonts-link-font-quicksand" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-quicksand">.font-quicksand { font-family: 'Quicksand', sans-serif !important; }</style><link id="all-fonts-link-font-nunito" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-nunito">.font-nunito { font-family: 'Nunito', sans-serif !important; }</style><link id="all-fonts-link-font-newsreader" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..800&amp;display=swap"><style id="all-fonts-style-font-newsreader">.font-newsreader { font-family: 'Newsreader', serif !important; }</style><link id="all-fonts-link-font-google-sans-flex" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-google-sans-flex">.font-google-sans-flex { font-family: 'Google Sans Flex', sans-serif !important; }</style><link id="all-fonts-link-font-oswald" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-oswald">.font-oswald { font-family: 'Oswald', sans-serif !important; }</style><link id="all-fonts-link-font-dm-sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-dm-sans">.font-dm-sans { font-family: 'DM Sans', sans-serif !important; }</style></head>
-<body class="font-sans antialiased selection:bg-accent-500/30 selection:text-white overflow-x-hidden bg-navy-950 text-slate-300">
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <link id="all-fonts-link-font-geist" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist">
+      .font-geist { font-family: 'Geist', sans-serif !important; }
+    </style><link id="all-fonts-link-font-roboto" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-roboto">
+      .font-roboto { font-family: 'Roboto', sans-serif !important; }
+    </style><link id="all-fonts-link-font-montserrat" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-montserrat">
+      .font-montserrat { font-family: 'Montserrat', sans-serif !important; }
+    </style><link id="all-fonts-link-font-poppins" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-poppins">
+      .font-poppins { font-family: 'Poppins', sans-serif !important; }
+    </style><link id="all-fonts-link-font-playfair" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&amp;display=swap"><style id="all-fonts-style-font-playfair">
+      .font-playfair { font-family: 'Playfair Display', serif !important; }
+    </style><link id="all-fonts-link-font-instrument-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-instrument-serif">
+      .font-instrument-serif { font-family: 'Instrument Serif', serif !important; }
+    </style><link id="all-fonts-link-font-merriweather" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;display=swap"><style id="all-fonts-style-font-merriweather">
+      .font-merriweather { font-family: 'Merriweather', serif !important; }
+    </style><link id="all-fonts-link-font-bricolage" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-bricolage">
+      .font-bricolage { font-family: 'Bricolage Grotesque', sans-serif !important; }
+    </style><link id="all-fonts-link-font-jakarta" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-jakarta">
+      .font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif !important; }
+    </style><link id="all-fonts-link-font-manrope" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-manrope">
+      .font-manrope { font-family: 'Manrope', sans-serif !important; }
+    </style><link id="all-fonts-link-font-space-grotesk" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-space-grotesk">
+      .font-space-grotesk { font-family: 'Space Grotesk', sans-serif !important; }
+    </style><link id="all-fonts-link-font-work-sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-work-sans">
+      .font-work-sans { font-family: 'Work Sans', sans-serif !important; }
+    </style><link id="all-fonts-link-font-pt-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-pt-serif">
+      .font-pt-serif { font-family: 'PT Serif', serif !important; }
+    </style><link id="all-fonts-link-font-geist-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist-mono">
+      .font-geist-mono { font-family: 'Geist Mono', monospace !important; }
+    </style><link id="all-fonts-link-font-space-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-space-mono">
+      .font-space-mono { font-family: 'Space Mono', monospace !important; }
+    </style><link id="all-fonts-link-font-quicksand" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-quicksand">
+      .font-quicksand { font-family: 'Quicksand', sans-serif !important; }
+    </style><link id="all-fonts-link-font-nunito" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-nunito">
+      .font-nunito { font-family: 'Nunito', sans-serif !important; }
+    </style><link id="all-fonts-link-font-newsreader" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..800&amp;display=swap"><style id="all-fonts-style-font-newsreader">
+      .font-newsreader { font-family: 'Newsreader', serif !important; }
+    </style><link id="all-fonts-link-font-google-sans-flex" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-google-sans-flex">
+      .font-google-sans-flex { font-family: 'Google Sans Flex', sans-serif !important; }
+    </style><link id="all-fonts-link-font-oswald" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-oswald">
+      .font-oswald { font-family: 'Oswald', sans-serif !important; }
+    </style><link id="all-fonts-link-font-dm-sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-dm-sans">
+      .font-dm-sans { font-family: 'DM Sans', sans-serif !important; }
+    </style></head>
+  <body class="font-sans antialiased selection:bg-accent-500/30 selection:text-white overflow-x-hidden bg-navy-950 text-slate-300">
+
+
+
+
+
+
 
 <!-- Background (component) added by Aura -->
-<div class="aura-background-component fixed top-0 w-full h-screen -z-10 brightness-50" data-alpha-mask="80" style="; mask-image: linear-gradient(to bottom, transparent, black 0%, black 80%, transparent); -webkit-mask-image: linear-gradient(to bottom, transparent, black 0%, black 80%, transparent)"><div class="aura-background-component top-0 w-full -z-10 absolute h-full">
-  <div data-us-project="TIWE0oFfvUmetsFoxL6u" class="absolute w-full h-full left-0 top-0 -z-10"></div>
-  <script type="text/javascript">
-    !function(){if(!window.UnicornStudio){window.UnicornStudio={isInitialized:!1};var i=document.createElement("script");i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.29/dist/unicornStudio.umd.js",i.onload=function(){window.UnicornStudio.isInitialized||(UnicornStudio.init(),window.UnicornStudio.isInitialized=!0)},(document.head || document.body).appendChild(i)}}();
-  </script>
-</div></div>
+<div class="aura-background-component fixed top-0 w-full h-screen -z-10 brightness-50" data-alpha-mask="80" style="; mask-image: linear-gradient(to bottom, transparent, black 0%, black 80%, transparent); -webkit-mask-image: linear-gradient(to bottom, transparent, black 0%, black 80%, transparent)"><div data-us-project="bmaMERjX2VZDtPrh4Zwx" class="absolute w-full h-full left-0 top-0 -z-10"></div>
+<script type="text/javascript">
+  !function(){if(!window.UnicornStudio){window.UnicornStudio={isInitialized:!1};var i=document.createElement("script");i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.34/dist/unicornStudio.umd.js",i.onload=function(){window.UnicornStudio.isInitialized||(UnicornStudio.init(),window.UnicornStudio.isInitialized=!0)},(document.head || document.body).appendChild(i)}}();
+</script></div>
 
 
 
@@ -102,524 +191,1406 @@
 
 
 
-
-
-
-
-
-
-
-
-
+    <canvas width="1440" height="712" style="display: block; width: 1440px; height: 712px" class=""></canvas>
 
     <!-- Background Ambience -->
     <div class="fixed inset-0 z-0 pointer-events-none">
-        <!-- Top center blue glow -->
-        <div class="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[600px] rounded-full blur-[120px] bg-accent-600/10"></div>
-        <!-- Bottom right teal/blue glow -->
-        <div class="absolute bottom-0 right-0 w-[600px] h-[600px] rounded-full blur-[100px] bg-teal-900/10"></div>
-        <!-- Grid pattern overlay -->
-        <div class="absolute inset-0 opacity-[0.03] bg-[url(default)] bg-cover bg-center" style=""></div>
+      <!-- Top center blue glow -->
+      <div class="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[600px] rounded-full blur-[120px] bg-accent-600/10"></div>
+      <!-- Bottom right teal/blue glow -->
+      <div class="absolute bottom-0 right-0 w-[600px] h-[600px] rounded-full blur-[100px] bg-teal-900/10"></div>
+      <!-- Grid pattern overlay -->
+      <div class="absolute inset-0 opacity-[0.03] bg-cover bg-center bg-[url(https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/bd33fee2-5b7b-48e8-ac44-62d8eb948494_3840w.png?w=800&amp;q=80)]"></div>
     </div>
 
     <!-- LOGO BAR -->
     <div class="relative z-50 w-full border-b backdrop-blur-sm border-white/5 bg-navy-950/80">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap justify-center items-center gap-8 md:gap-16">
-            <!-- Logo 1: PLUS -->
-            <div class="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
-                <div class="transition-colors flex rounded px-3 py-1.5 shadow-lg items-center hover:bg-white shadow-white/5 bg-slate-900/95">
-                   <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/ff50a4ac-a8a7-43ff-bf26-80362192eaa2_320w.png" alt="PLUS University of Salzburg" class="h-6 w-auto object-contain" style="">
-                </div>
-            </div>
-            
-            <!-- Logo 2: UBS -->
-            <div class="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
-                 <div class="transition-colors flex rounded px-3 py-1.5 shadow-lg items-center hover:bg-white shadow-white/5 bg-slate-900/95">
-                     <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c30f944d-868f-47a3-bb74-25ece561bc09_320w.png" alt="UBS Université Bretagne Sud" class="w-auto h-6 object-cover" style="">
-                </div>
-            </div>
-
-            <!-- Logo 3: CDE -->
-            <div class="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
-                <div class="transition-colors flex rounded px-3 py-1.5 shadow-lg items-center hover:bg-white shadow-white/5 bg-slate-900/95">
-                    <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/d1f74c8f-11a5-4a0f-b2f6-4fca89c69c23_800w.png" alt="Copernicus Master in Digital Earth" class="h-6 w-auto object-cover">
-                </div>
-            </div>
-
-            <!-- Logo 4: New Image Spot -->
-            <div class="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
-                <div class="transition-colors flex rounded px-3 py-1.5 shadow-lg items-center hover:bg-white shadow-white/5 bg-slate-900/95">
-                    <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/803891ce-4ab6-434a-9ead-228933a0d50b_320w.png" alt="New Partner Logo" class="h-6 w-auto object-contain" style="">
-                </div>
-            </div>
+      <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap justify-center items-center gap-8 md:gap-16">
+        <!-- Logo 1: PLUS -->
+        <div class="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
+          <div class="transition-colors flex rounded px-3 py-1.5 shadow-lg items-center hover:bg-white shadow-white/5 bg-slate-900/95">
+            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/ff50a4ac-a8a7-43ff-bf26-80362192eaa2_320w.png" alt="PLUS University of Salzburg" class="h-6 w-auto object-contain">
+          </div>
         </div>
+
+        <!-- Logo 2: UBS -->
+        <div class="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
+          <div class="transition-colors flex rounded px-3 py-1.5 shadow-lg items-center hover:bg-white shadow-white/5 bg-slate-900/95">
+            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c30f944d-868f-47a3-bb74-25ece561bc09_320w.png" alt="UBS Université Bretagne Sud" class="w-auto h-6 object-cover">
+          </div>
+        </div>
+
+        <!-- Logo 3: CDE -->
+        <div class="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
+          <div class="transition-colors flex rounded px-3 py-1.5 shadow-lg items-center hover:bg-white shadow-white/5 bg-slate-900/95">
+            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/d1f74c8f-11a5-4a0f-b2f6-4fca89c69c23_800w.png" alt="Copernicus Master in Digital Earth" class="h-6 w-auto object-cover">
+          </div>
+        </div>
+
+        <!-- Logo 4: New Image Spot -->
+        <div class="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
+          <div class="transition-colors flex rounded px-3 py-1.5 shadow-lg items-center hover:bg-white shadow-white/5 bg-slate-900/95">
+            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/803891ce-4ab6-434a-9ead-228933a0d50b_320w.png" alt="New Partner Logo" class="h-6 w-auto object-contain">
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- NAVIGATION -->
     <nav class="sticky glass-nav transition-all duration-300 w-full z-40 top-0">
-        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-            <!-- Left Icon -->
-            <a href="#" class="flex items-center gap-2 group">
-                <div class="w-8 h-8 rounded-full flex items-center justify-center group-hover:bg-accent-500/20 transition-colors border bg-white/10 border-white/10">
-                    <span class="font-semibold text-sm text-white">DT</span>
-                </div>
-            </a>
+      <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        <!-- Left Icon -->
+        <a href="#" class="flex items-center gap-2 group">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center group-hover:bg-accent-500/20 transition-colors border bg-white/10 border-white/10">
+            <span class="font-semibold text-sm text-white">DT</span>
+          </div>
+        </a>
 
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex gap-x-8 gap-y-8 items-center">
-                <a href="#" class="text-sm font-medium transition-colors text-slate-300 hover:text-white">Home</a>
-                <a href="#about" class="text-sm font-medium transition-colors text-slate-300 hover:text-white">About</a>
-                <!-- CV Link Added -->
-                <a href="https://drive.google.com/file/d/1PSaRSaDAzWj84D9Yq4_AIHHCD9ewmQij/view?usp=sharing" class="transition-colors flex items-center gap-1 text-sm font-medium hover:text-white text-slate-300">
-                    CV
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" class="lucide lucide-external-link opacity-50 w-[12px] h-[12px]" data-icon-replaced="true" style="width: 12px; height: 12px; color: rgb(255, 255, 255);"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
-                </a>
-                <a href="#coursework" class="text-sm font-medium transition-colors text-slate-300 hover:text-white">Services</a> 
-                <a href="#projects" class="text-sm font-medium transition-colors text-slate-300 hover:text-white">Portfolio</a>
-                <a href="#contact" class="text-sm font-medium transition-colors text-slate-300 hover:text-white">Contact</a>
-            </div>
-
-            <!-- Mobile Menu Toggle -->
-            <button class="md:hidden text-slate-300 hover:text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="menu" class="lucide lucide-menu w-6 h-6"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
-            </button>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex gap-x-8 gap-y-8 items-center">
+          <a href="#" class="text-sm font-medium transition-colors text-slate-300 hover:text-white">
+            Home
+          </a>
+          <a href="#about" class="text-sm font-medium transition-colors text-slate-300 hover:text-white">
+            About
+          </a>
+          <!-- CV Link Added -->
+          <a href="https://drive.google.com/file/d/1PSaRSaDAzWj84D9Yq4_AIHHCD9ewmQij/view?usp=sharing" class="transition-colors flex items-center gap-1 text-sm font-medium hover:text-white text-slate-300">
+            CV
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" aria-hidden="true" class="lucide lucide-external-link opacity-50 w-[12px] h-[12px]" data-icon-replaced="true" style="width: 12px; height: 12px; color: rgb(255, 255, 255);"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+          </a>
+          <a href="#coursework" class="text-sm font-medium transition-colors text-slate-300 hover:text-white">
+            Services
+          </a>
+          <a href="#projects" class="text-sm font-medium transition-colors text-slate-300 hover:text-white">
+            Portfolio
+          </a>
+          <a href="#contact" class="text-sm font-medium transition-colors text-slate-300 hover:text-white">
+            Contact
+          </a>
         </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="md:hidden text-slate-300 hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="menu" aria-hidden="true" class="lucide lucide-menu w-6 h-6"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+        </button>
+      </div>
     </nav>
 
     <!-- HERO SECTION -->
     <section class="min-h-[calc(100vh-140px)] flex flex-col text-center z-10 pt-20 pr-6 pb-20 pl-6 relative items-center justify-center">
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent-500/10 border border-accent-500/20 mb-8 animate-[fadeIn_1s_ease-out]">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="sparkles" aria-hidden="true" class="lucide lucide-sparkles w-3 h-3 text-accent-400"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>
+        <span class="text-xs font-semibold tracking-wide uppercase text-accent-400">
+          Copernicus Master in Digital Earth
+        </span>
+      </div>
 
-   <!-- Badge -->
-   <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent-500/10 border border-accent-500/20 mb-8 animate-[fadeIn_1s_ease-out]">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="sparkles" class="lucide lucide-sparkles w-3 h-3 text-accent-400"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>
-      <span class="text-xs font-semibold tracking-wide uppercase text-accent-400">Copernicus Master in Digital Earth</span>
-   </div>
+      <!-- Title -->
+      <h1 class="md:text-7xl leading-[1.1] text-5xl font-semibold tracking-tight mb-4 drop-shadow-2xl text-white">
+        Dominik Tabernig
+      </h1>
 
-   <!-- Title -->
-   <h1 class="md:text-7xl leading-[1.1] text-5xl font-semibold tracking-tight mb-4 drop-shadow-2xl text-white">
-      Dominik Tabernig
-   </h1>
+      <!-- Subtitle -->
+      <p class="md:text-2xl text-xl font-light tracking-tight text-slate-50">
+        Welcome to my ePortfolio
+      </p>
 
-   <!-- Subtitle -->
-   <p class="md:text-2xl text-xl font-light tracking-tight text-slate-50">
-      Welcome to my ePortfolio
-   </p>
+      <!-- Tagline -->
+      <p class="text-sm md:text-base font-medium tracking-widest uppercase mb-8 text-accent-400">
+        Earth Observation • Remote Sensing • Digital Earth
+      </p>
 
-   <!-- Tagline -->
-   <p class="text-sm md:text-base font-medium tracking-widest uppercase mb-8 text-accent-400">
-      Earth Observation • Remote Sensing • Digital Earth
-   </p>
+      <!-- Paragraph -->
+      <p class="leading-relaxed text-lg text-slate-400 max-w-2xl mb-10">
+        This ePortfolio provides an overview of my academic work and
+        professional development during my studies in the Copernicus Master in
+        Digital Earth (CDE).
+      </p>
 
-   <!-- Paragraph -->
-   <p class="leading-relaxed text-lg max-w-2xl mb-10 text-slate-400">
-      This ePortfolio provides an overview of my academic work and professional development during my studies in the
-      Copernicus Master in Digital Earth (CDE).
-   </p>
-
-   <!-- CTA -->
-   <a href="#about" class="group relative inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-medium shadow-[0_0_20px_-5px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_-5px_rgba(255,255,255,0.5)] transition-all hover:-translate-y-0.5 bg-white text-navy-950">
-      Learn More
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-down" class="lucide lucide-arrow-down w-4 h-4 transition-transform group-hover:translate-y-1"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg>
-   </a>
-</section>
+      <!-- CTA -->
+      <a href="#about" class="group relative inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-medium shadow-[0_0_20px_-5px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_-5px_rgba(255,255,255,0.5)] transition-all hover:-translate-y-0.5 bg-white text-navy-950">
+        Learn More
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-down" aria-hidden="true" class="lucide lucide-arrow-down w-4 h-4 transition-transform group-hover:translate-y-1"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg>
+      </a>
+    </section>
 
     <!-- MAIN CONTENT CONTAINER -->
     <main class="max-w-6xl z-10 mr-auto ml-auto pr-6 pb-24 pl-6 relative space-y-32">
+      <!-- SECTION: ABOUT ME -->
+      <section class="scroll-mt-32" id="about">
+        <h2 class="text-3xl md:text-4xl font-semibold tracking-tight mb-2 text-white">
+          About Me
+        </h2>
+        <div class="h-1 w-20 bg-accent-500 rounded-full mb-10"></div>
 
-        <!-- SECTION: ABOUT ME -->
-        <section id="about" class="scroll-mt-32">
-            <h2 class="text-3xl md:text-4xl font-semibold tracking-tight mb-2 text-white">About Me</h2>
-            <div class="h-1 w-20 bg-accent-500 rounded-full mb-10"></div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
-                <!-- Left: Info -->
-                <div class="md:col-span-3 glass-card rounded-[18px] p-8 md:p-10 shadow-glass">
-                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-3 text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="user" class="lucide lucide-user w-5 h-5 text-accent-400"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                        Personal Information
-                    </h3>
-                    <div class="space-y-6">
-                        <div class="">
-                            <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">Name</p>
-                            <p class="text-lg text-slate-200">Dominik Tabernig</p>
-                        </div>
-                        <div class="">
-                            <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">Born</p>
-                            <p class="text-lg text-slate-200">18 August 1999, Salzburg, Austria</p>
-                        </div>
-                        <div class="">
-                            <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">Programme</p>
-                            <p class="text-lg leading-relaxed text-slate-200">Erasmus Mundus Joint Master – <span class="text-accent-400">Copernicus Master in Digital Earth (CDE)</span></p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right: Image with correct Photo -->
-                <div class="md:col-span-2 h-full min-h-[300px] glass-card rounded-[18px] overflow-hidden relative group">
-                    <div class="bg-gradient-to-t to-transparent opacity-100 z-10 absolute top-0 right-0 bottom-0 left-0 from-navy-950/80"></div>
-                    <!-- Photo -->
-                    <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/ecfeb48d-5a8b-4c21-94f1-225faea2fba3_3840w.jpg" alt="Dominik Tabernig" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90" style="">
-                    <div class="absolute bottom-6 left-6 z-20">
-                        <div class="text-xs font-mono border px-2 py-1 rounded inline-block backdrop-blur-sm text-accent-400 border-accent-400/30 bg-navy-950/50">
-                            CDE STUDENT
-                        </div>
-                    </div>
-                </div>
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+          <!-- Left: Info -->
+          <div class="md:col-span-3 glass-card rounded-[18px] p-8 md:p-10 shadow-glass">
+            <h3 class="text-xl font-semibold mb-6 flex items-center gap-3 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="user" aria-hidden="true" class="lucide lucide-user w-5 h-5 text-accent-400"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              Personal Information
+            </h3>
+            <div class="space-y-6">
+              <div class="">
+                <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">
+                  Name
+                </p>
+                <p class="text-lg text-slate-200">Dominik Tabernig</p>
+              </div>
+              <div class="">
+                <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">
+                  Born
+                </p>
+                <p class="text-lg text-slate-200">
+                  18 August 1999, Salzburg, Austria
+                </p>
+              </div>
+              <div class="">
+                <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">
+                  Programme
+                </p>
+                <p class="text-lg leading-relaxed text-slate-200">
+                  Erasmus Mundus Joint Master –
+                  <span class="text-accent-400">
+                    Copernicus Master in Digital Earth (CDE)
+                  </span>
+                </p>
+              </div>
             </div>
+          </div>
+
+          <!-- Right: Image with correct Photo -->
+          <div class="md:col-span-2 h-full min-h-[300px] glass-card rounded-[18px] overflow-hidden relative group">
+            <div class="bg-gradient-to-t to-transparent opacity-100 z-10 absolute top-0 right-0 bottom-0 left-0 from-navy-950/80"></div>
+            <!-- Photo -->
+            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/ecfeb48d-5a8b-4c21-94f1-225faea2fba3_3840w.jpg" alt="Dominik Tabernig" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90">
+            <div class="absolute bottom-6 left-6 z-20">
+              <div class="text-xs font-mono border px-2 py-1 rounded inline-block backdrop-blur-sm text-accent-400 border-accent-400/30 bg-navy-950/50">
+                CDE STUDENT
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: ACADEMIC & PROFESSIONAL GRID -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- ACADEMIC BACKGROUND -->
+        <section class="">
+          <div class="flex items-center gap-3 mb-8">
+            <div class="p-2 rounded-lg bg-accent-500/10 border border-accent-500/20">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="graduation-cap" aria-hidden="true" class="lucide lucide-graduation-cap w-5 h-5 text-accent-400"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
+            </div>
+            <h3 class="text-2xl font-semibold tracking-tight text-white">
+              Academic Background
+            </h3>
+          </div>
+
+          <div class="space-y-6 border-l pl-8 relative border-white/10">
+            <!-- Item 1 -->
+            <div class="relative">
+              <div class="absolute -left-[39px] top-1.5 w-5 h-5 rounded-full border border-accent-500 flex items-center justify-center bg-navy-950">
+                <div class="w-1.5 h-1.5 rounded-full bg-accent-500"></div>
+              </div>
+              <h4 class="text-lg font-medium text-white">
+                Copernicus Master in Digital Earth
+              </h4>
+              <p class="text-sm mb-1 text-accent-400">2023 – Present</p>
+              <p class="text-sm leading-relaxed text-slate-400">
+                Specialization: GeoData Science (PLUS) &amp; Geo-Intelligence
+                (UBS). Focus on advanced EO data analysis, machine learning, and
+                spatial modelling.
+              </p>
+            </div>
+            <!-- Item 2 -->
+            <div class="relative">
+              <div class="absolute -left-[39px] top-1.5 w-5 h-5 rounded-full border bg-navy-950 border-slate-700"></div>
+              <h4 class="text-lg font-medium text-white">
+                Bachelor of Science in Geography
+              </h4>
+              <p class="text-sm text-slate-400 mb-1">2019 – 2023</p>
+              <p class="leading-relaxed text-sm text-slate-400">
+                University of Salzburg. Thesis on Alpine snow remote sensing
+                applications.
+              </p>
+            </div>
+          </div>
         </section>
 
-        <!-- SECTION: ACADEMIC & PROFESSIONAL GRID -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            
-            <!-- ACADEMIC BACKGROUND -->
-            <section class="">
-                <div class="flex items-center gap-3 mb-8">
-                    <div class="p-2 rounded-lg bg-accent-500/10 border border-accent-500/20">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="graduation-cap" class="lucide lucide-graduation-cap w-5 h-5 text-accent-400"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
-                    </div>
-                    <h3 class="text-2xl font-semibold tracking-tight text-white">Academic Background</h3>
-                </div>
+        <!-- PROFESSIONAL EXPERIENCE -->
+        <section class="">
+          <div class="flex items-center gap-3 mb-8">
+            <div class="p-2 rounded-lg bg-emerald-500/10 border border-emerald-500/20">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="briefcase" aria-hidden="true" class="lucide lucide-briefcase w-5 h-5 text-emerald-400"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg>
+            </div>
+            <h3 class="text-2xl font-semibold tracking-tight text-white">
+              Professional Experience
+            </h3>
+          </div>
 
-                <div class="space-y-6 border-l pl-8 relative border-white/10">
-                    <!-- Item 1 -->
-                    <div class="relative">
-                        <div class="absolute -left-[39px] top-1.5 w-5 h-5 rounded-full border border-accent-500 flex items-center justify-center bg-navy-950">
-                            <div class="w-1.5 h-1.5 rounded-full bg-accent-500"></div>
-                        </div>
-                        <h4 class="text-lg font-medium text-white">Copernicus Master in Digital Earth</h4>
-                        <p class="text-sm mb-1 text-accent-400">2023 – Present</p>
-                        <p class="text-sm leading-relaxed text-slate-400">
-                            Specialization: GeoData Science (PLUS) &amp; Geo-Intelligence (UBS).
-                            Focus on advanced EO data analysis, machine learning, and spatial modelling.
-                        </p>
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="relative">
-                        <div class="absolute -left-[39px] top-1.5 w-5 h-5 rounded-full border bg-navy-950 border-slate-700"></div>
-                        <h4 class="text-lg font-medium text-white">Bachelor of Science in Geography</h4>
-                        <p class="text-sm text-slate-400 mb-1">2019 – 2023</p>
-                        <p class="leading-relaxed text-sm text-slate-400">University of Salzburg. Thesis on Alpine snow remote sensing applications.</p>
-                    </div>
-                </div>
-            </section>
+          <div class="space-y-6 border-l pl-8 relative border-white/10">
+            <!-- Item 1 -->
+            <div class="relative">
+              <div class="absolute -left-[39px] top-1.5 w-5 h-5 rounded-full border bg-navy-950 border-white/30"></div>
+              <h4 class="text-lg font-medium text-white">Chef de Partie</h4>
+              <p class="text-sm mb-1 text-emerald-400">2022-Present</p>
+              <p class="text-sm text-slate-400">Stiegl Brauwelt, Salzburg</p>
+            </div>
+            <!-- Item 2 -->
+            <div class="relative">
+              <div class="absolute -left-[39px] top-1.5 w-5 h-5 rounded-full border bg-navy-950 border-white/10"></div>
+              <h4 class="text-lg font-medium text-white">
+                Emergency Medical Technician
+              </h4>
+              <p class="text-sm text-slate-400 mb-1">2019 – 2020</p>
+              <p class="text-sm text-slate-400">Austrian Armed Forces</p>
+            </div>
+          </div>
+        </section>
+      </div>
 
-            <!-- PROFESSIONAL EXPERIENCE -->
-            <section class="">
-                <div class="flex items-center gap-3 mb-8">
-                    <div class="p-2 rounded-lg bg-emerald-500/10 border border-emerald-500/20">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="briefcase" class="lucide lucide-briefcase w-5 h-5 text-emerald-400"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg>
-                    </div>
-                    <h3 class="text-2xl font-semibold tracking-tight text-white">Professional Experience</h3>
-                </div>
+      <!-- SECTION: MOTIVATION & GOALS -->
+      <section class="glass-card rounded-[18px] p-8 md:p-12 border-l-4 border-l-accent-500">
+        <h3 class="text-2xl font-semibold tracking-tight mb-4 text-white">
+          Motivation &amp; Goals
+        </h3>
+        <p class="leading-relaxed text-lg text-slate-300">
+          Earth observation is where my curiosity feels most at home. I am
+          particularly interested in optical satellite sensors, calibration and
+          validation, and the transformation of raw instrument signals into
+          scientifically reliable products. Through the CDE programme, I aim to
+          deepen my technical skills in remote sensing and Digital Earth
+          concepts and to prepare for a future career contributing to
+          operational Earth-observation missions, ideally in an international
+          research or space-agency context.
+        </p>
+      </section>
 
-                <div class="space-y-6 border-l pl-8 relative border-white/10">
-                     <!-- Item 1 -->
-                     <div class="relative">
-                        <div class="absolute -left-[39px] top-1.5 w-5 h-5 rounded-full border bg-navy-950 border-white/30"></div>
-                        <h4 class="text-lg font-medium text-white">Chef de Partie</h4>
-                        <p class="text-sm mb-1 text-emerald-400">2022-Present</p>
-                        <p class="text-sm text-slate-400">Stiegl Brauwelt, Salzburg</p>
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="relative">
-                        <div class="absolute -left-[39px] top-1.5 w-5 h-5 rounded-full border bg-navy-950 border-white/10"></div>
-                        <h4 class="text-lg font-medium text-white">Emergency Medical Technician</h4>
-                        <p class="text-sm text-slate-400 mb-1">2019 – 2020</p>
-                        <p class="text-sm text-slate-400">Austrian Armed Forces</p>
-                    </div>
-                </div>
-            </section>
+      <!-- SECTION: COURSEWORK & EXPERTISE -->
+      <section id="coursework" class="">
+        <div class="flex flex-col items-center text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-white">
+            Coursework &amp; Expertise
+          </h2>
+          <p class="max-w-2xl text-slate-400">
+            Competencies developed during the master's programme:
+          </p>
         </div>
 
-        <!-- SECTION: MOTIVATION & GOALS -->
-        <section class="glass-card rounded-[18px] p-8 md:p-12 border-l-4 border-l-accent-500">
-            <h3 class="text-2xl font-semibold tracking-tight mb-4 text-white">Motivation &amp; Goals</h3>
-            <p class="leading-relaxed text-lg text-slate-300">Earth observation is where my curiosity feels most at home. I am particularly interested in optical satellite sensors, calibration and validation, and the transformation of raw instrument signals into scientifically reliable products. Through the CDE programme, I aim to deepen my technical skills in remote sensing and Digital Earth concepts and to prepare for a future career contributing to operational Earth-observation missions, ideally in an international research or space-agency context.</p>
-        </section>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="glass-card hover:-translate-y-1 transition-transform duration-300 rounded-[18px] pt-6 pr-6 pb-6 pl-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="satellite" aria-hidden="true" class="lucide lucide-satellite w-8 h-8 mb-4 text-accent-400"><path d="m13.5 6.5-3.148-3.148a1.205 1.205 0 0 0-1.704 0L6.352 5.648a1.205 1.205 0 0 0 0 1.704L9.5 10.5"></path><path d="M16.5 7.5 19 5"></path><path d="m17.5 10.5 3.148 3.148a1.205 1.205 0 0 1 0 1.704l-2.296 2.296a1.205 1.205 0 0 1-1.704 0L13.5 14.5"></path><path d="M9 21a6 6 0 0 0-6-6"></path><path d="M9.352 10.648a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l4.296-4.296a1.205 1.205 0 0 0 0-1.704l-2.296-2.296a1.205 1.205 0 0 0-1.704 0z"></path></svg>
+            <h4 class="text-lg font-medium mb-2 text-white">
+              Advanced Remote Sensing
+            </h4>
+            <p class="text-sm text-slate-400">
+              Automated image analysis, radiometric correction, segmentation,
+              SVM/Random Forest, CNN concepts, and quality assessment.
+            </p>
+          </div>
+          <!-- Card 2 -->
+          <div class="glass-card p-6 rounded-[18px] hover:-translate-y-1 transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="map" aria-hidden="true" class="lucide lucide-map w-8 h-8 mb-4 text-purple-400"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"></path><path d="M15 5.764v15"></path><path d="M9 3.236v15"></path></svg>
+            <h4 class="text-lg font-medium mb-2 text-white">
+              Software Engineering
+            </h4>
+            <p class="text-sm text-slate-400">
+              Object-oriented programming, Python, Java, geo-software frameworks
+              including GeoServer, GeoTools, and OpenLayers.
+            </p>
+          </div>
+          <!-- Card 3 -->
+          <div class="glass-card p-6 rounded-[18px] hover:-translate-y-1 transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="code-2" aria-hidden="true" class="lucide lucide-code-2 w-8 h-8 mb-4 text-emerald-400"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>
+            <h4 class="text-lg font-medium mb-2 text-white">
+              Geospatial Data Models
+            </h4>
+            <p class="text-sm text-slate-400">
+              UML-based modeling, General Feature Model, XML fundamentals, and
+              Geography Markup Language (GML) implementation.
+            </p>
+          </div>
+          <!-- Card 4 -->
+          <div class="glass-card p-6 rounded-[18px] hover:-translate-y-1 transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="earth" aria-hidden="true" class="lucide lucide-earth mb-4" data-icon-set="lucide" data-icon-replaced="true" style="color: rgb(251, 146, 60);"><path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path><path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"></path><path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"></path><circle cx="12" cy="12" r="10"></circle></svg>
+            <h4 class="text-lg font-medium mb-2 text-white">Big Earth Data</h4>
+            <p class="text-sm text-slate-400">
+              Data cube concepts, AI and machine learning for continental and
+              global-scale remote sensing analysis.
+            </p>
+          </div>
+          <!-- Card 5 -->
+          <div class="glass-card p-6 rounded-[18px] hover:-translate-y-1 transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="blocks" aria-hidden="true" class="lucide lucide-blocks mb-4" data-icon-set="lucide" data-icon-replaced="true" style="color: rgb(244, 114, 182);"><path d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2"></path><rect x="14" y="2" width="8" height="8" rx="1"></rect></svg>
+            <h4 class="text-lg font-medium mb-2 text-white">
+              Object-Based Analysis
+            </h4>
+            <p class="text-sm text-slate-400">
+              Image segmentation, knowledge representation, class modeling, and
+              object-based classification techniques.
+            </p>
+          </div>
+          <!-- Card 6 -->
+          <div class="glass-card p-6 rounded-[18px] hover:-translate-y-1 transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="airplay" aria-hidden="true" class="lucide lucide-airplay lucide-brain-circuit mb-4 w-[32px] h-[32px]" data-icon-set="lucide" data-icon-replaced="true" style="color: rgb(34, 211, 238); width: 32px; height: 32px;"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><path d="m12 15 5 6H7Z"></path></svg>
+            <h4 class="text-lg font-medium mb-2 text-white">
+              Machine Learning
+            </h4>
+            <p class="text-sm text-slate-400">
+              Applying Random Forest and CNNs for land cover classification.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <!-- SECTION: COURSEWORK & EXPERTISE -->
-        <section id="coursework" class="">
-            <div class="flex flex-col items-center text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-white">Coursework &amp; Expertise</h2>
-                <p class="max-w-2xl text-slate-400">Competencies developed during the master's programme:</p>
+      <!-- SECTION: SELECTED PROJECTS -->
+      <section class="border-slate-950" id="projects">
+        <h2 class="text-3xl md:text-4xl font-semibold tracking-tight mb-12 text-white">
+          Selected Projects
+        </h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-8">
+          <!-- Project 1 (Image Added) -->
+          <div class="glass-card rounded-[18px] overflow-hidden flex flex-col group">
+            <div class="h-48 relative overflow-hidden group">
+              <div class="group-hover:bg-transparent transition-colors duration-500 z-10 absolute top-0 right-0 bottom-0 left-0 bg-slate-900/20"></div>
+              <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/0b040a87-d55b-447f-96d0-654dad922a24_1600w.webp" alt="Snow Cover Analysis" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Card 1 -->
-                <div class="glass-card hover:-translate-y-1 transition-transform duration-300 rounded-[18px] pt-6 pr-6 pb-6 pl-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="satellite" class="lucide lucide-satellite w-8 h-8 mb-4 text-accent-400"><path d="m13.5 6.5-3.148-3.148a1.205 1.205 0 0 0-1.704 0L6.352 5.648a1.205 1.205 0 0 0 0 1.704L9.5 10.5"></path><path d="M16.5 7.5 19 5"></path><path d="m17.5 10.5 3.148 3.148a1.205 1.205 0 0 1 0 1.704l-2.296 2.296a1.205 1.205 0 0 1-1.704 0L13.5 14.5"></path><path d="M9 21a6 6 0 0 0-6-6"></path><path d="M9.352 10.648a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l4.296-4.296a1.205 1.205 0 0 0 0-1.704l-2.296-2.296a1.205 1.205 0 0 0-1.704 0z"></path></svg>
-                    <h4 class="text-lg font-medium mb-2 text-white">Advanced Remote Sensing</h4>
-                    <p class="text-sm text-slate-400">Automated image analysis, radiometric correction, segmentation, SVM/Random Forest, CNN concepts, and quality assessment.</p>
+            <div class="p-8 flex-1 flex flex-col">
+              <h3 class="text-xl font-semibold mb-3 text-white">
+                Bachelor's Thesis: Snow Cover and Snow Height Mapping
+              </h3>
+              <p class="flex-1 text-sm mb-6 text-slate-400">
+                This project investigated snow extent and snow depth in the High
+                Tauern / Großglockner region by integrating optical satellite
+                imagery with laser altimetry. The work demonstrates multi-sensor
+                data fusion and physically meaningful interpretation of Earth
+                observation data.
+              </p>
+              <div class="space-y-3 pt-6 border-t border-white/5">
+                <div class="flex items-start gap-3">
+                  <span class="text-xs font-semibold uppercase w-16 shrink-0 mt-0.5 text-accent-400">
+                    Data
+                  </span>
+                  <span class="text-sm text-slate-300">
+                    Sentinel-2 (optical), ICESat-2 (LiDAR)
+                  </span>
                 </div>
-                <!-- Card 2 -->
-                <div class="glass-card p-6 rounded-[18px] hover:-translate-y-1 transition-transform duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="map" class="lucide lucide-map w-8 h-8 mb-4 text-purple-400"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"></path><path d="M15 5.764v15"></path><path d="M9 3.236v15"></path></svg>
-                    <h4 class="text-lg font-medium mb-2 text-white">Software Engineering</h4>
-                    <p class="text-sm text-slate-400">Object-oriented programming, Python, Java, geo-software frameworks including GeoServer, GeoTools, and OpenLayers.</p>
+                <div class="flex items-start gap-3">
+                  <span class="text-xs font-semibold uppercase w-16 shrink-0 mt-0.5 text-accent-400">
+                    Methods
+                  </span>
+                  <span class="text-sm text-slate-300">
+                    NDSI, spatial matching, elevation differencing, GIS-based
+                    visualization
+                  </span>
                 </div>
-                <!-- Card 3 -->
-                <div class="glass-card p-6 rounded-[18px] hover:-translate-y-1 transition-transform duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="code-2" class="lucide lucide-code-2 w-8 h-8 mb-4 text-emerald-400"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>
-                    <h4 class="text-lg font-medium mb-2 text-white">Geospatial Data Models</h4>
-                    <p class="text-sm text-slate-400">UML-based modeling, General Feature Model, XML fundamentals, and Geography Markup Language (GML) implementation.</p>
-                </div>
-                <!-- Card 4 -->
-                <div class="glass-card p-6 rounded-[18px] hover:-translate-y-1 transition-transform duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="earth" class="lucide lucide-earth mb-4" data-icon-set="lucide" data-icon-replaced="true" style="color: rgb(251, 146, 60);"><path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path><path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"></path><path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"></path><circle cx="12" cy="12" r="10"></circle></svg>
-                    <h4 class="text-lg font-medium mb-2 text-white">Big Earth Data</h4>
-                    <p class="text-sm text-slate-400">Data cube concepts, AI and machine learning for continental and global-scale remote sensing analysis.</p>
-                </div>
-                <!-- Card 5 -->
-                <div class="glass-card p-6 rounded-[18px] hover:-translate-y-1 transition-transform duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="blocks" class="lucide lucide-blocks mb-4" data-icon-set="lucide" data-icon-replaced="true" style="color: rgb(244, 114, 182);"><path d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2"></path><rect x="14" y="2" width="8" height="8" rx="1"></rect></svg>
-                    <h4 class="text-lg font-medium mb-2 text-white">Object-Based Analysis</h4>
-                    <p class="text-sm text-slate-400">Image segmentation, knowledge representation, class modeling, and object-based classification techniques.</p>
-                </div>
-                <!-- Card 6 -->
-                <div class="glass-card p-6 rounded-[18px] hover:-translate-y-1 transition-transform duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="airplay" class="lucide lucide-airplay lucide-brain-circuit mb-4 w-[32px] h-[32px]" data-icon-set="lucide" data-icon-replaced="true" style="color: rgb(34, 211, 238); width: 32px; height: 32px;"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><path d="m12 15 5 6H7Z"></path></svg>
-                    <h4 class="text-lg font-medium mb-2 text-white">Machine Learning</h4>
-                    <p class="text-sm text-slate-400">Applying Random Forest and CNNs for land cover classification.</p>
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- SECTION: SELECTED PROJECTS -->
-        <section class="border-slate-950" id="projects">
-            <h2 class="text-3xl md:text-4xl font-semibold tracking-tight mb-12 text-white">Selected Projects</h2>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- Project 1 (Image Added) -->
-                <div class="glass-card rounded-[18px] overflow-hidden flex flex-col group">
-                    <div class="h-48 relative overflow-hidden group">
-                        <div class="group-hover:bg-transparent transition-colors duration-500 z-10 absolute top-0 right-0 bottom-0 left-0 bg-slate-900/20"></div>
-                        <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/0b040a87-d55b-447f-96d0-654dad922a24_1600w.webp" alt="Snow Cover Analysis" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" style="">
-                    </div>
-                    <div class="p-8 flex-1 flex flex-col">
-                        <h3 class="text-xl font-semibold mb-3 text-white">Bachelor's Thesis: Snow Cover and Snow Height Mapping</h3>
-                        <p class="flex-1 text-sm mb-6 text-slate-400">This project investigated snow extent and snow depth in the High Tauern / Großglockner region by integrating optical satellite imagery with laser altimetry. The work demonstrates multi-sensor data fusion and physically meaningful interpretation of Earth observation data.</p>
-                        <div class="space-y-3 pt-6 border-t border-white/5">
-                            <div class="flex items-start gap-3">
-                                <span class="text-xs font-semibold uppercase w-16 shrink-0 mt-0.5 text-accent-400">Data</span>
-                                <span class="text-sm text-slate-300"> Sentinel-2 (optical), ICESat-2 (LiDAR)</span>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <span class="text-xs font-semibold uppercase w-16 shrink-0 mt-0.5 text-accent-400">Methods</span>
-                                <span class="text-sm text-slate-300">NDSI, spatial matching, elevation differencing, GIS-based visualization</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 (Image Added) -->
-                <div class="glass-card rounded-[18px] overflow-hidden flex flex-col group">
-                    <div class="h-48 relative overflow-hidden group">
-                        <div class="group-hover:bg-transparent transition-colors duration-500 z-10 absolute top-0 right-0 bottom-0 left-0 bg-slate-900/20"></div>
-                        <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a8317f70-c986-41f2-96d9-67391ab6efa0_1600w.jpg" alt="Satellite Earth Data" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" style="">
-                    </div>
-                    <div class="p-8 flex-1 flex flex-col">
-                        <h3 class="text-xl font-semibold mb-3 text-white">Advanced Remote Sensing Analysis</h3>
-                        <p class="flex-1 text-sm mb-6 text-slate-400">Hands-on assignments focused on advanced image understanding workflows and quality assessment, reflecting real-world EO application scenarios.</p>
-                        <div class="space-y-3 pt-6 border-t border-white/5">
-                            <div class="flex items-start gap-3">
-                                <span class="text-xs font-semibold uppercase w-16 shrink-0 mt-0.5 text-emerald-400">Data</span>
-                                <span class="text-sm text-slate-300">Copernicus EO data, VHR imagery, Radar and LiDAR examples</span>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <span class="text-xs font-semibold uppercase w-16 shrink-0 mt-0.5 text-emerald-400">Methods</span>
-                                <span class="text-sm text-slate-300">Radiometric correction, segmentation, SVM / Random Forest, CNN concepts</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <!-- Project 2 (Image Added) -->
+          <div class="glass-card rounded-[18px] overflow-hidden flex flex-col group">
+            <div class="h-48 relative overflow-hidden group">
+              <div class="group-hover:bg-transparent transition-colors duration-500 z-10 absolute top-0 right-0 bottom-0 left-0 bg-slate-900/20"></div>
+              <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a8317f70-c986-41f2-96d9-67391ab6efa0_1600w.jpg" alt="Satellite Earth Data" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
             </div>
-        </section>
+            <div class="p-8 flex-1 flex flex-col">
+              <h3 class="text-xl font-semibold mb-3 text-white">
+                Advanced Remote Sensing Analysis
+              </h3>
+              <p class="flex-1 text-sm mb-6 text-slate-400">
+                Hands-on assignments focused on advanced image understanding
+                workflows and quality assessment, reflecting real-world EO
+                application scenarios.
+              </p>
+              <div class="space-y-3 pt-6 border-t border-white/5">
+                <div class="flex items-start gap-3">
+                  <span class="text-xs font-semibold uppercase w-16 shrink-0 mt-0.5 text-emerald-400">
+                    Data
+                  </span>
+                  <span class="text-sm text-slate-300">
+                    Copernicus EO data, VHR imagery, Radar and LiDAR examples
+                  </span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-xs font-semibold uppercase w-16 shrink-0 mt-0.5 text-emerald-400">
+                    Methods
+                  </span>
+                  <span class="text-sm text-slate-300">
+                    Radiometric correction, segmentation, SVM / Random Forest,
+                    CNN concepts
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card rounded-[18px] overflow-hidden flex flex-col group cursor-pointer hover:shadow-glow transition-all duration-300" onclick="document.getElementById('ai4eo-modal').classList.remove('hidden')">
+            <div class="h-48 relative overflow-hidden group">
+              <div class="group-hover:bg-transparent transition-colors duration-500 z-10 absolute top-0 right-0 bottom-0 left-0 bg-slate-900/20"></div>
+              <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/aaee947e-0df1-474a-8de3-7eb50f7f664b_800w.png" alt="AI4EO Spring School 2026" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            </div>
+            <div class="p-8 flex-1 flex flex-col">
+              <h3 class="text-xl font-semibold mb-3 text-white">
+                AI4EO Spring School 2026 - UBS,Vannes,Fr
+              </h3>
+              <p class="flex-1 text-sm mb-6 text-slate-400">
+                An intensive introduction to modern Artificial Intelligence
+                methods for Earth Observation (EO). The event combined
+                scientific lectures, practical coding sessions, and
+                interdisciplinary discussions concerning geospatial foundation
+                models, remote sensing workflows, deep learning, and ethical AI
+                applications.
+              </p>
+              <div class="space-y-3 pt-6 border-t border-white/5">
+                <div class="flex items-start gap-3">
+                  <span class="text-xs font-semibold uppercase w-16 shrink-0 mt-0.5 text-accent-400">
+                    Topic
+                  </span>
+                  <span class="text-sm text-slate-300">
+                    GeoAI, Deep Learning, Foundation Models
+                  </span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-xs font-semibold uppercase w-16 shrink-0 mt-0.5 text-accent-400">
+                    Action
+                  </span>
+                  <span class="text-sm text-accent-400 flex items-center gap-1 font-medium">
+                    Read Full Report
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-[16px] h-[16px]" data-icon-replaced="true" style="color: rgb(96, 165, 250); width: 16px; height: 16px;">
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- SECTION: LEARNING JOURNEY -->
-        <section class="glass-card rounded-[24px] p-8 md:p-12 relative overflow-hidden">
-            <div class="absolute top-0 right-0 w-64 h-64 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 bg-accent-600/10"></div>
-            
-            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-4 relative z-10 text-white">Learning Journey</h2>
-            <p class="max-w-3xl z-10 mb-10 relative text-slate-400">The CDE programme has been instrumental in shaping my technical capabilities and theoretical understanding of Digital Earth concepts. During the first semester of the CDE programme, I learned how theoretical concepts in Digital Earth are directly connected to real-world applications. The interdisciplinary structure helped me understand problems from technical, environmental, and societal perspectives.</p>
+      <!-- SECTION: LEARNING JOURNEY -->
+      <section class="glass-card rounded-[24px] p-8 md:p-12 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 bg-accent-600/10"></div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
-                <!-- Col 1 -->
+        <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-4 relative z-10 text-white">
+          Learning Journey
+        </h2>
+        <p class="max-w-3xl z-10 mb-10 relative text-slate-400">
+          The CDE programme has been instrumental in shaping my technical
+          capabilities and theoretical understanding of Digital Earth concepts.
+          During the first semester of the CDE programme, I learned how
+          theoretical concepts in Digital Earth are directly connected to
+          real-world applications. The interdisciplinary structure helped me
+          understand problems from technical, environmental, and societal
+          perspectives.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
+          <!-- Col 1 -->
+          <div class="">
+            <h4 class="text-lg font-medium mb-6 flex items-center gap-2 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="check-circle-2" aria-hidden="true" class="lucide lucide-check-circle-2 w-5 h-5 text-accent-400"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+              Key Learning Outcomes
+            </h4>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-500 mt-2"></span>
+                <span class="text-sm text-slate-300">
+                  Digital Earth concepts and Copernicus services
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-500 mt-2"></span>
+                <span class="text-sm text-slate-300">
+                  Practical geospatial data workflows
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-500 mt-2"></span>
+                <span class="text-sm text-slate-300">
+                  Ability to communicate complex scientific results effectively.
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 2 -->
+          <div class="">
+            <h4 class="text-lg font-medium mb-6 flex items-center gap-2 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="cpu" aria-hidden="true" class="lucide lucide-cpu w-5 h-5 text-purple-400"><path d="M12 20v2"></path><path d="M12 2v2"></path><path d="M17 20v2"></path><path d="M17 2v2"></path><path d="M2 12h2"></path><path d="M2 17h2"></path><path d="M2 7h2"></path><path d="M20 12h2"></path><path d="M20 17h2"></path><path d="M20 7h2"></path><path d="M7 20v2"></path><path d="M7 2v2"></path><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="8" y="8" width="8" height="8" rx="1"></rect></svg>
+              Technical Skills
+            </h4>
+            <div class="flex flex-wrap gap-x-2 gap-y-2">
+              <span class="px-3 py-1 rounded-full border text-xs bg-white/5 border-white/10 text-white">
+                Python
+              </span>
+              <span class="text-xs border rounded-full pt-1 pr-3 pb-1 pl-3 text-white bg-white/5 border-white/10">
+                Remote Sensing: Sentinel data, LiDAR, Radar
+              </span>
+              <span class="px-3 py-1 rounded-full border text-xs bg-white/5 border-white/10 text-white">
+                ArcGIS Pro
+              </span>
+              <span class="px-3 py-1 rounded-full border text-xs bg-white/5 border-white/10 text-white">
+                QGIS
+              </span>
+              <span class="px-3 py-1 rounded-full border text-xs bg-white/5 border-white/10 text-white">
+                SNAP
+              </span>
+              <span class="text-xs border rounded-full pt-1 pr-3 pb-1 pl-3 text-white bg-white/5 border-white/10">
+                MATLAB
+              </span>
+              <span class="text-xs border rounded-full pt-1 pr-3 pb-1 pl-3 text-white bg-white/5 border-white/10">
+                Trimble eCognition
+              </span>
+              <span class="px-3 py-1 rounded-full border text-xs bg-white/5 border-white/10 text-white">
+                Git
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: GET IN TOUCH -->
+      <section id="contact" class="">
+        <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-center mb-12 text-white">
+          Get in Touch
+        </h2>
+
+        <div class="glass-card rounded-[18px] overflow-hidden grid grid-cols-1 md:grid-cols-2">
+          <!-- Left -->
+          <div class="p-8 md:p-12 border-b md:border-b-0 md:border-r border-white/10">
+            <h3 class="text-xl font-semibold mb-6 text-white">
+              Contact Information
+            </h3>
+            <ul class="space-y-6">
+              <li class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-full flex items-center justify-center bg-white/5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" aria-hidden="true" class="lucide lucide-map-pin w-5 h-5 text-accent-400"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <p class="text-xs text-slate-500 uppercase tracking-wider">
+                    Location
+                  </p>
+                  <p class="text-white">Salzburg, Austria</p>
+                </div>
+              </li>
+              <li class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-full flex items-center justify-center bg-white/5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="school" aria-hidden="true" class="lucide lucide-school w-5 h-5 text-accent-400"><path d="M14 21v-3a2 2 0 0 0-4 0v3"></path><path d="M18 4.933V21"></path><path d="m4 6 7.106-3.79a2 2 0 0 1 1.788 0L20 6"></path><path d="m6 11-3.52 2.147a1 1 0 0 0-.48.854V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a1 1 0 0 0-.48-.853L18 11"></path><path d="M6 4.933V21"></path><circle cx="12" cy="9" r="2"></circle></svg>
+                </div>
                 <div class="">
-                    <h4 class="text-lg font-medium mb-6 flex items-center gap-2 text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="check-circle-2" class="lucide lucide-check-circle-2 w-5 h-5 text-accent-400"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
-                        Key Learning Outcomes
-                    </h4>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3">
-                            <span class="w-1.5 h-1.5 rounded-full bg-slate-500 mt-2"></span>
-                            <span class="text-sm text-slate-300">Digital Earth concepts and Copernicus services</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="w-1.5 h-1.5 rounded-full bg-slate-500 mt-2"></span>
-                            <span class="text-sm text-slate-300">Practical geospatial data workflows</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="w-1.5 h-1.5 rounded-full bg-slate-500 mt-2"></span>
-                            <span class="text-sm text-slate-300">Ability to communicate complex scientific results effectively.</span>
-                        </li>
-                    </ul>
+                  <p class="text-xs text-slate-500 uppercase tracking-wider">
+                    Programme
+                  </p>
+                  <p class="text-white">Copernicus Master in Digital Earth</p>
                 </div>
-
-                <!-- Col 2 -->
+              </li>
+              <li class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-full flex items-center justify-center bg-white/5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="languages" aria-hidden="true" class="lucide lucide-languages w-5 h-5 text-accent-400"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg>
+                </div>
                 <div class="">
-                    <h4 class="text-lg font-medium mb-6 flex items-center gap-2 text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="cpu" class="lucide lucide-cpu w-5 h-5 text-purple-400"><path d="M12 20v2"></path><path d="M12 2v2"></path><path d="M17 20v2"></path><path d="M17 2v2"></path><path d="M2 12h2"></path><path d="M2 17h2"></path><path d="M2 7h2"></path><path d="M20 12h2"></path><path d="M20 17h2"></path><path d="M20 7h2"></path><path d="M7 20v2"></path><path d="M7 2v2"></path><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="8" y="8" width="8" height="8" rx="1"></rect></svg>
-                        Technical Skills
-                    </h4>
-                    <div class="flex flex-wrap gap-x-2 gap-y-2">
-                        <span class="px-3 py-1 rounded-full border text-xs bg-white/5 border-white/10 text-white">Python</span>
-                        <span class="text-xs border rounded-full pt-1 pr-3 pb-1 pl-3 text-white bg-white/5 border-white/10">Remote Sensing: Sentinel data, LiDAR, Radar</span>
-                        <span class="px-3 py-1 rounded-full border text-xs bg-white/5 border-white/10 text-white">ArcGIS Pro</span>
-                        <span class="px-3 py-1 rounded-full border text-xs bg-white/5 border-white/10 text-white">QGIS</span>
-                        <span class="px-3 py-1 rounded-full border text-xs bg-white/5 border-white/10 text-white">SNAP</span>
-                        <span class="text-xs border rounded-full pt-1 pr-3 pb-1 pl-3 text-white bg-white/5 border-white/10">MATLAB</span>
-                        <span class="text-xs border rounded-full pt-1 pr-3 pb-1 pl-3 text-white bg-white/5 border-white/10">Trimble eCognition</span>
-                        <span class="px-3 py-1 rounded-full border text-xs bg-white/5 border-white/10 text-white">Git</span>
-                    </div>
+                  <p class="text-xs text-slate-500 uppercase tracking-wider">
+                    Languages
+                  </p>
+                  <p class="text-white">
+                    German (Native), English (C2), Italian (A1)
+                  </p>
                 </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right -->
+          <div class="p-8 md:p-12 bg-white/[0.02]">
+            <h3 class="text-xl font-semibold mb-6 text-white">
+              Programme Information
+            </h3>
+            <p class="text-sm leading-relaxed mb-6 text-slate-400">
+              The Copernicus Master in Digital Earth is an Erasmus Mundus Joint
+              Master programme co-funded by the European Union.
+            </p>
+            <div class="space-y-2 mb-8">
+              <p class="text-xs font-semibold uppercase text-white">
+                Partner Universities
+              </p>
+              <p class="text-sm text-slate-400">
+                • Paris Lodron University Salzburg (PLUS)
+              </p>
+              <p class="text-sm text-slate-400">
+                • University of South Brittany (UBS)
+              </p>
+              <p class="text-sm text-slate-400">
+                • Palacký University Olomouc (UPOL)
+              </p>
             </div>
-        </section>
 
-        <!-- SECTION: GET IN TOUCH -->
-        <section id="contact" class="">
-            <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-center mb-12 text-white">Get in Touch</h2>
-            
-            <div class="glass-card rounded-[18px] overflow-hidden grid grid-cols-1 md:grid-cols-2">
-                <!-- Left -->
-                <div class="p-8 md:p-12 border-b md:border-b-0 md:border-r border-white/10">
-                    <h3 class="text-xl font-semibold mb-6 text-white">Contact Information</h3>
-                    <ul class="space-y-6">
-                        <li class="flex items-center gap-4">
-                            <div class="w-10 h-10 rounded-full flex items-center justify-center bg-white/5">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" class="lucide lucide-map-pin w-5 h-5 text-accent-400"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            </div>
-                            <div>
-                                <p class="text-xs text-slate-500 uppercase tracking-wider">Location</p>
-                                <p class="text-white">Salzburg, Austria</p>
-                            </div>
-                        </li>
-                        <li class="flex items-center gap-4">
-                            <div class="w-10 h-10 rounded-full flex items-center justify-center bg-white/5">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="school" class="lucide lucide-school w-5 h-5 text-accent-400"><path d="M14 21v-3a2 2 0 0 0-4 0v3"></path><path d="M18 5v16"></path><path d="m4 6 7.106-3.79a2 2 0 0 1 1.788 0L20 6"></path><path d="m6 11-3.52 2.147a1 1 0 0 0-.48.854V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a1 1 0 0 0-.48-.853L18 11"></path><path d="M6 5v16"></path><circle cx="12" cy="9" r="2"></circle></svg>
-                            </div>
-                            <div>
-                                <p class="text-xs text-slate-500 uppercase tracking-wider">Programme</p>
-                                <p class="text-white">Copernicus Master in Digital Earth</p>
-                            </div>
-                        </li>
-                        <li class="flex items-center gap-4">
-                            <div class="w-10 h-10 rounded-full flex items-center justify-center bg-white/5">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="languages" class="lucide lucide-languages w-5 h-5 text-accent-400"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg>
-                            </div>
-                            <div class="">
-                                <p class="text-xs text-slate-500 uppercase tracking-wider">Languages</p>
-                                <p class="text-white">German (Native), English (C2), Italian (A1)</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Right -->
-                <div class="p-8 md:p-12 bg-white/[0.02]">
-                    <h3 class="text-xl font-semibold mb-6 text-white">Programme Information</h3>
-                    <p class="text-sm leading-relaxed mb-6 text-slate-400">
-                        The Copernicus Master in Digital Earth is an Erasmus Mundus Joint Master programme co-funded by the European Union.
-                    </p>
-                    <div class="space-y-2 mb-8">
-                        <p class="text-xs font-semibold uppercase text-white">Partner Universities</p>
-                        <p class="text-sm text-slate-400">• Paris Lodron University Salzburg (PLUS)</p>
-                        <p class="text-sm text-slate-400">• University of South Brittany (UBS)</p>
-                        <p class="text-sm text-slate-400">• Palacký University Olomouc (UPOL)</p>
-                    </div>
-                    
-                    <a href="https://master-cde.eu/" class="inline-flex items-center gap-2 transition-colors text-sm font-medium text-accent-400 hover:text-accent-300">
-                        Visit Programme Website
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" class="lucide lucide-external-link w-[16px] h-[16px]" data-icon-replaced="true" style="width: 16px; height: 16px; color: rgb(96, 165, 250)"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
-                    </a>
-                </div>
-            </div>
-        </section>
-
+            <a href="https://master-cde.eu/" class="inline-flex items-center gap-2 transition-colors text-sm font-medium text-accent-400 hover:text-accent-300">
+              Visit Programme Website
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" aria-hidden="true" class="lucide lucide-external-link w-[16px] h-[16px]" data-icon-replaced="true" style="width: 16px; height: 16px; color: rgb(96, 165, 250)"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->
     <footer class="border-t backdrop-blur-lg pt-16 pb-8 border-white/5 bg-navy-900/50">
-        <div class="max-w-6xl mr-auto ml-auto pr-6 pl-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
-                <!-- Col 1 -->
-                <div class="">
-                    <div class="flex items-center gap-2 mb-4">
-                        <div class="w-6 h-6 rounded bg-accent-500/20 flex items-center justify-center border border-accent-500/30">
-                            <span class="text-xs font-bold text-accent-400">DT</span>
-                        </div>
-                        <span class="font-semibold text-white">Dominik Tabernig</span>
-                    </div>
-                    <p class="text-sm text-slate-500 leading-relaxed max-w-xs">
-                        Specializing in Earth Observation and Digital Earth technologies to analyze our changing planet.
-                    </p>
-                </div>
-
-                <!-- Col 2: Center Links -->
-                <div class="md:text-center">
-                    <h4 class="text-sm font-semibold uppercase tracking-wider mb-4 text-white">Quick Links</h4>
-                    <div class="flex flex-col md:flex-row md:justify-center gap-4 md:gap-8">
-                        <a href="#" class="text-sm transition-colors text-slate-400 hover:text-white">Home</a>
-                        <a href="#about" class="text-sm transition-colors text-slate-400 hover:text-white">About</a>
-                        <a href="#coursework" class="text-sm transition-colors text-slate-400 hover:text-white">Services</a>
-                        <a href="#projects" class="text-sm transition-colors text-slate-400 hover:text-white">Portfolio</a>
-                        <a href="#contact" class="text-sm transition-colors text-slate-400 hover:text-white">Contact</a>
-                    </div>
-                </div>
-
-                <!-- Col 3: Right -->
-                <div class="md:text-right">
-                    <h4 class="text-sm font-semibold uppercase tracking-wider mb-4 text-white">Programme</h4>
-                    <p class="text-sm text-slate-500">Erasmus Mundus Joint Master</p>
-                    <p class="text-sm text-slate-500">Copernicus Master in Digital Earth</p>
-                </div>
+      <div class="max-w-6xl mr-auto ml-auto pr-6 pl-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+          <!-- Col 1 -->
+          <div class="">
+            <div class="flex items-center gap-2 mb-4">
+              <div class="w-6 h-6 rounded bg-accent-500/20 flex items-center justify-center border border-accent-500/30">
+                <span class="text-xs font-bold text-accent-400">DT</span>
+              </div>
+              <span class="font-semibold text-white">Dominik Tabernig</span>
             </div>
+            <p class="text-sm text-slate-500 leading-relaxed max-w-xs">
+              Specializing in Earth Observation and Digital Earth technologies
+              to analyze our changing planet.
+            </p>
+          </div>
 
-            <!-- PARTNER LOGOS SECTION -->
-            <div class="flex mb-12 justify-center gap-8 flex-wrap">
-                <!-- University of Salzburg -->
-                <div class="hover:opacity-100 transition-opacity opacity-90 rounded-xl px-4 py-4 bg-slate-900">
-                    <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/bf9dd540-3e6d-4c82-af75-8f410a61663c_320w.png" alt="University of Salzburg Logo" class="md:h-20 bg-center opacity-80 w-auto h-16 object-cover" style="">
-                </div>
-                 <!-- UBS Bretagne Sud -->
-                <div class="hover:opacity-100 transition-opacity flex opacity-90 rounded-xl pt-4 pr-4 pb-4 pl-4 items-center bg-slate-900">
-                    <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/aaad6eb2-075e-417b-b21c-2f6caa527050_320w.png" alt="Université Bretagne Sud Logo" class="md:h-20 opacity-80 w-auto h-16 object-contain rotate-x-5" style="">
-                </div>
-                <!-- New Logo Spot -->
-                <div class="hover:opacity-100 transition-opacity flex opacity-80 rounded-xl px-4 py-4 items-center bg-slate-900">
-                     <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4d910253-cea5-4798-b1f9-c67f48dc9f23_800w.png" alt="Partner Logo" class="md:h-20 opacity-80 w-auto h-16 object-contain">
-                </div>
+          <!-- Col 2: Center Links -->
+          <div class="md:text-center">
+            <h4 class="text-sm font-semibold uppercase tracking-wider mb-4 text-white">
+              Quick Links
+            </h4>
+            <div class="flex flex-col md:flex-row md:justify-center gap-4 md:gap-8">
+              <a href="#" class="text-sm transition-colors text-slate-400 hover:text-white">
+                Home
+              </a>
+              <a href="#about" class="text-sm transition-colors text-slate-400 hover:text-white">
+                About
+              </a>
+              <a href="#coursework" class="text-sm transition-colors text-slate-400 hover:text-white">
+                Services
+              </a>
+              <a href="#projects" class="text-sm transition-colors text-slate-400 hover:text-white">
+                Portfolio
+              </a>
+              <a href="#contact" class="text-sm transition-colors text-slate-400 hover:text-white">
+                Contact
+              </a>
             </div>
+          </div>
 
-            <!-- Bottom Bar -->
-            <div class="pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4 border-white/5">
-                <p class="text-xs text-slate-600">
-                    © 2025 Dominik Tabernig. All rights reserved.
-                </p>
-                <div class="flex items-center gap-2">
-                    <span class="text-xs text-slate-600">Powered by Readdy</span>
-                    <div class="w-2 h-2 rounded-full bg-accent-500 animate-pulse"></div>
-                </div>
-            </div>
+          <!-- Col 3: Right -->
+          <div class="md:text-right">
+            <h4 class="text-sm font-semibold uppercase tracking-wider mb-4 text-white">
+              Programme
+            </h4>
+            <p class="text-sm text-slate-500">Erasmus Mundus Joint Master</p>
+            <p class="text-sm text-slate-500">
+              Copernicus Master in Digital Earth
+            </p>
+          </div>
         </div>
+
+        <!-- PARTNER LOGOS SECTION -->
+        <div class="flex mb-12 justify-center gap-8 flex-wrap">
+          <!-- University of Salzburg -->
+          <div class="hover:opacity-100 transition-opacity opacity-90 rounded-xl px-4 py-4 bg-slate-900">
+            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/bf9dd540-3e6d-4c82-af75-8f410a61663c_320w.png" alt="University of Salzburg Logo" class="md:h-20 bg-center opacity-80 w-auto h-16 object-cover">
+          </div>
+          <!-- UBS Bretagne Sud -->
+          <div class="hover:opacity-100 transition-opacity flex opacity-90 rounded-xl pt-4 pr-4 pb-4 pl-4 items-center bg-slate-900">
+            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/aaad6eb2-075e-417b-b21c-2f6caa527050_320w.png" alt="Université Bretagne Sud Logo" class="md:h-20 opacity-80 w-auto h-16 object-contain rotate-x-5">
+          </div>
+          <!-- New Logo Spot -->
+          <div class="hover:opacity-100 transition-opacity flex opacity-80 rounded-xl px-4 py-4 items-center bg-slate-900">
+            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4d910253-cea5-4798-b1f9-c67f48dc9f23_800w.png" alt="Partner Logo" class="md:h-20 opacity-80 w-auto h-16 object-contain">
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4 border-white/5">
+          <p class="text-xs text-slate-600">
+            © 2025 Dominik Tabernig. All rights reserved.
+          </p>
+          <div class="flex items-center gap-2">
+            <span class="text-xs text-slate-600">Powered by Readdy</span>
+            <div class="w-2 h-2 rounded-full bg-accent-500 animate-pulse"></div>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- Init Icons -->
     <script>
-        lucide.createIcons({
-            attrs: {
-                'stroke-width': 1.5
-            }
-        });
+      lucide.createIcons({
+          attrs: {
+              'stroke-width': 1.5
+          }
+      });
     </script>
 
+    <div id="ai4eo-modal" class="hidden fixed inset-0 z-[100] flex justify-center bg-navy-950/95 backdrop-blur-xl overflow-y-auto">
+      <div class="fixed top-6 right-6 z-[110]">
+        <button onclick="document.getElementById('ai4eo-modal').classList.add('hidden')" class="text-slate-300 hover:text-white p-3 glass-card rounded-full bg-navy-900/50 hover:bg-navy-800 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+            <path d="M18 6 6 18"></path>
+            <path d="m6 6 12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="w-full mx-auto px-6 py-20 space-y-8 text-slate-300 max-w-5xl">
+        <div class="mb-12 border-b border-white/10 pb-8 max-w-3xl mx-auto w-full">
+          <h1 class="text-4xl md:text-5xl font-semibold tracking-tight text-white mb-4">
+            A Report on the AI4EO Spring School 2026
+          </h1>
+          <p class="text-accent-400 font-medium tracking-wide uppercase text-sm">
+            Vannes, France — April 8–10, 2026
+          </p>
+        </div>
+        <div class="w-full rounded-[24px] bg-[#0A1020] border border-white/10 p-8 md:p-10 mb-12 relative overflow-hidden flex flex-col justify-center shadow-2xl max-w-3xl mx-auto">
+          <div class="absolute inset-0 bg-cover bg-center opacity-10 mix-blend-screen bg-[url(default)]"></div>
+          <div class="relative z-10">
+            <div class="flex items-center gap-2 mb-6">
+              <svg class="w-4 h-4 text-cyan-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m13.5 6.5-3.148-3.148a1.205 1.205 0 0 0-1.704 0L6.352 5.648a1.205 1.205 0 0 0 0 1.704L9.5 10.5"></path>
+                <path d="M16.5 7.5 19 5"></path>
+                <path d="m17.5 10.5 3.148 3.148a1.205 1.205 0 0 1 0 1.704l-2.296 2.296a1.205 1.205 0 0 1-1.704 0L13.5 14.5"></path>
+                <path d="M9 21a6 6 0 0 0-6-6"></path>
+                <path d="M9.352 10.648a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l4.296-4.296a1.205 1.205 0 0 0 0-1.704l-2.296-2.296a1.205 1.205 0 0 0-1.704 0z"></path>
+              </svg>
+              <span class="text-xs font-bold tracking-widest text-cyan-400 uppercase">
+                AI4EO Spring School 2026
+              </span>
+            </div>
+            <div class="flex flex-wrap items-baseline gap-x-3 gap-y-2 mb-2">
+              <h2 class="text-5xl md:text-8xl leading-none font-black tracking-tighter flex items-center">
+                <span class="text-red-500">A</span>
+                <span class="text-yellow-400">I</span>
+                <span class="text-cyan-400">4</span>
+                <span class="text-orange-500">E</span>
+                <span class="text-orange-500">O</span>
+              </h2>
+              <span class="text-5xl md:text-8xl leading-none font-black text-white tracking-tighter">
+                2026
+              </span>
+            </div>
+            <h3 class="text-3xl md:text-5xl font-black text-white tracking-tight mb-10">
+              SPRING SCHOOL
+            </h3>
+            <div class="flex flex-col md:flex-row gap-4 md:gap-6 text-sm md:text-base font-medium text-slate-300 mb-10">
+              <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 shrink-0 text-cyan-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                  <line x1="16" x2="16" y1="2" y2="6"></line>
+                  <line x1="8" x2="8" y1="2" y2="6"></line>
+                  <line x1="3" x2="21" y1="10" y2="10"></line>
+                </svg>
+                April 8–10, 2026
+              </div>
+              <div class="hidden md:block w-px h-5 bg-white/20"></div>
+              <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 shrink-0 text-cyan-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                UBS Tohannic Campus, Vannes, France
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white/[0.02] border border-cyan-500/20 rounded-xl p-5 backdrop-blur-sm">
+                <div class="flex items-center gap-2 mb-3 text-cyan-400">
+                  <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                  <span class="text-xs font-bold tracking-wider uppercase">
+                    Audience
+                  </span>
+                </div>
+                <p class="text-sm text-slate-200 font-medium">
+                  Graduate students &amp; junior researchers
+                </p>
+              </div>
+              <div class="bg-white/[0.02] border border-cyan-500/20 rounded-xl p-5 backdrop-blur-sm">
+                <div class="flex items-center gap-2 mb-3 text-cyan-400">
+                  <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                  <span class="text-xs font-bold tracking-wider uppercase">
+                    Topics
+                  </span>
+                </div>
+                <p class="text-sm text-slate-200 font-medium">
+                  Foundation Models, MLOps, Responsible AI, GenAI
+                </p>
+              </div>
+              <div class="bg-white/[0.02] border border-cyan-500/20 rounded-xl p-5 backdrop-blur-sm">
+                <div class="flex items-center gap-2 mb-3 text-cyan-400">
+                  <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                    <line x1="16" x2="16" y1="2" y2="6"></line>
+                    <line x1="8" x2="8" y1="2" y2="6"></line>
+                    <line x1="3" x2="21" y1="10" y2="10"></line>
+                  </svg>
+                  <span class="text-xs font-bold tracking-wider uppercase">
+                    Format
+                  </span>
+                </div>
+                <p class="text-sm text-slate-200 font-medium">
+                  3 days · In-person only · English
+                </p>
+              </div>
+              <div class="bg-white/[0.02] border border-cyan-500/20 rounded-xl p-5 backdrop-blur-sm">
+                <div class="flex items-center gap-2 mb-3 text-cyan-400">
+                  <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m13.5 6.5-3.148-3.148a1.205 1.205 0 0 0-1.704 0L6.352 5.648a1.205 1.205 0 0 0 0 1.704L9.5 10.5"></path>
+                    <path d="M16.5 7.5 19 5"></path>
+                    <path d="m17.5 10.5 3.148 3.148a1.205 1.205 0 0 1 0 1.704l-2.296 2.296a1.205 1.205 0 0 1-1.704 0L13.5 14.5"></path>
+                    <path d="M9 21a6 6 0 0 0-6-6"></path>
+                    <path d="M9.352 10.648a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l4.296-4.296a1.205 1.205 0 0 0 0-1.704l-2.296-2.296a1.205 1.205 0 0 0-1.704 0z"></path>
+                  </svg>
+                  <span class="text-xs font-bold tracking-wider uppercase">
+                    Partner
+                  </span>
+                </div>
+                <p class="text-sm text-slate-200 font-medium">
+                  ESA Phi-lab · Data-driven project included
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prose prose-invert prose-slate max-w-none max-w-3xl mx-auto w-full">
+          <p class="text-lg leading-relaxed text-slate-300">
+            The AI4EO Spring School 2026 provided participants with an intensive
+            introduction to modern Artificial Intelligence methods for Earth
+            Observation (EO). The event combined scientific lectures, practical
+            coding sessions, and interdisciplinary discussions concerning
+            geospatial foundation models, remote sensing workflows, deep
+            learning, and ethical AI applications. This report outlines the main
+            scientific topics covered during the Spring School, evaluates the
+            educational value of the sessions, and reflects on how the event
+            contributed to current developments in GeoAI research.
+          </p>
+
+          <h2 class="text-2xl font-semibold text-accent-400 mt-12 mb-6">
+            Day 1 / Foundation Models and Emerging AI Technologies
+          </h2>
+          <p class="leading-relaxed mb-4">
+            One of the central themes throughout the Spring School concerned the
+            increasing importance of foundation models within Earth Observation.
+            Several lectures demonstrated how large pretrained AI systems are
+            beginning to transform EO workflows through transferable geospatial
+            embeddings and multimodal learning approaches.
+          </p>
+          <p class="leading-relaxed mb-4">
+            Particularly interesting was the ESA-oriented presentation on
+            emerging innovation technologies, which discussed:
+          </p>
+          <ul class="list-disc pl-6 space-y-2 mb-8 text-slate-400">
+            <li>augmented intelligence,</li>
+            <li>generative AI,</li>
+            <li>explainable AI,</li>
+            <li>onboard AI systems,</li>
+            <li>neuromorphic computing,</li>
+            <li>
+              and advanced computational paradigms for future EO
+              infrastructures.
+            </li>
+          </ul>
+
+          <h3 class="text-xl font-medium text-white mt-8 mb-4">
+            Deep Learning for 3D Point Clouds
+          </h3>
+          <p class="leading-relaxed mb-4">
+            The lecture delivered by Iris de Gélis focused on
+            deep-learning-based change detection in raw 3D point clouds. The
+            session introduced advanced geometric deep-learning methods designed
+            for irregular spatial data and explained how modern convolutional
+            approaches can operate directly on point clouds rather than
+            rasterized representations.
+          </p>
+          <p class="leading-relaxed mb-4">
+            Particular attention was given to Kernel Point Convolution (KPConv),
+            which extends convolution operations to unordered 3D point
+            distributions. The presentation discussed several Siamese KPConv
+            architectures developed for semantic change detection in urban
+            environments. A notable contribution involved the Encoder Fusion
+            SiamKPConv architecture, where temporal change information is
+            introduced directly into encoder layers to improve segmentation
+            performance.
+          </p>
+          <p class="leading-relaxed mb-4">
+            The lecture clearly demonstrated the challenges associated with
+            sparse point-cloud structures and geometric neural networks. Unlike
+            classical image-based convolutional networks, point-cloud approaches
+            must learn directly from irregular spatial neighbourhoods and
+            geometric relations.
+          </p>
+          <p class="leading-relaxed mb-8">
+            The practical importance of these methods became especially visible
+            when benchmark results on the Urb3DCD dataset were presented. The
+            experiments highlighted the influence of encoder-fusion strategies
+            and backbone architectures on semantic change-detection performance.
+          </p>
+
+          <h3 class="text-xl font-medium text-white mt-8 mb-4">
+            Practical Sessions and Reproducible Research
+          </h3>
+          <p class="leading-relaxed mb-4">
+            An important strength of the Spring School was the strong emphasis
+            on practical implementation and reproducibility. Several sessions
+            involved hands-on notebook-based experimentation using modern Python
+            frameworks and EO datasets.
+          </p>
+          <p class="leading-relaxed mb-4">
+            The practical session conducted by Pierre Adorni focused on flood
+            mapping using:
+          </p>
+          <ul class="list-disc pl-6 space-y-2 mb-8 text-slate-400">
+            <li>Sentinel-1 SAR imagery,</li>
+            <li>Sentinel-2 optical imagery,</li>
+            <li>and AI-driven segmentation workflows.</li>
+          </ul>
+          <p class="leading-relaxed mb-8">
+            The tutorial demonstrated how multisensor Earth Observation
+            pipelines can support disaster monitoring applications through
+            multimodal data fusion.
+          </p>
+
+          <h2 class="text-2xl font-semibold text-accent-400 mt-12 mb-6">
+            Day 2 / TorchGeo
+          </h2>
+          <p class="leading-relaxed mb-8">
+            The presentation by Adam Stewart introduced TorchGeo, an open-source
+            geospatial machine-learning framework built on top of the PyTorch
+            ecosystem. The library is designed to simplify the development of
+            Earth Observation workflows by providing efficient tools for EO
+            dataset management, geospatial preprocessing, semantic segmentation,
+            and reproducible machine-learning experimentation. In addition,
+            participants were introduced to extensive tutorials and practical
+            resources available through the official TorchGeo documentation (
+            <a href="https://github.com/torchgeo/torchgeo" class="text-accent-400 hover:text-accent-300 transition-colors" target="_blank">
+              https://github.com/torchgeo/torchgeo
+            </a>
+            ). A particularly valuable aspect of the session involved the
+            discussion of reproducibility standards within machine-learning
+            research.
+          </p>
+
+          <h3 class="text-xl font-medium text-white mt-8 mb-4">
+            Ethical AI and Societal Implications
+          </h3>
+          <p class="leading-relaxed mb-4">
+            A particularly engaging lecture during the AI4EO Spring School 2026
+            was presented by Pedram Ghamisi and Weikang Yu and focused on
+            Responsible AI in Earth Observation. The session explored how
+            Artificial Intelligence is increasingly influencing the analysis and
+            interpretation of geospatial data and why responsible development
+            practices are becoming essential within modern EO research.
+          </p>
+          <p class="leading-relaxed mb-4">
+            The lecture covered topics such as bias mitigation, AI security,
+            geo-privacy, and the broader societal implications of AI-driven
+            satellite analysis. What I found particularly interesting was how
+            the speakers connected advanced deep-learning research with
+            practical challenges related to transparency, fairness, and secure
+            deployment of AI systems. The presentation clearly demonstrated that
+            Earth Observation technologies are no longer limited to purely
+            scientific applications, but are also becoming increasingly relevant
+            for environmental governance, urban planning, and large-scale
+            monitoring systems.
+          </p>
+          <p class="leading-relaxed mb-8">
+            I found the depth of both Pedram Ghamisi’s and Weikang Yu’s research
+            especially impressive. The questions they raised concerning
+            responsible AI development, trustworthy geospatial models, and
+            secure AI infrastructures are highly relevant for the future of the
+            Earth Observation community and provided an important perspective
+            alongside the more technically focused lectures of the Spring
+            School.
+          </p>
+
+          <h2 class="text-2xl font-semibold text-accent-400 mt-12 mb-6">
+            Day 3 / Conditional Flow Matching and Generative AI
+          </h2>
+          <p class="leading-relaxed mb-4">
+            The lecture and practical session delivered by Nicolas Audebert
+            focused on Conditional Flow Matching and modern generative AI
+            methods. Although the underlying mathematics was highly complex, I
+            found the lecture particularly interesting because it demonstrated
+            how modern AI algorithms can be used to improve the resolution and
+            quality of satellite imagery. It was especially fascinating to see
+            how generative and probabilistic models are capable of
+            reconstructing missing spatial details and enhancing Earth
+            Observation data through learned feature representations.
+          </p>
+          <p class="leading-relaxed mb-4">
+            Another aspect that I found very impressive was the discussion about
+            transforming SAR imagery into RGB-like visual representations. Since
+            SAR data is fundamentally different from optical imagery, the
+            possibility of converting radar information into visually
+            interpretable RGB images using AI-based approaches demonstrated the
+            enormous potential of modern generative models within Earth
+            Observation research.
+          </p>
+          <p class="leading-relaxed mb-8">
+            The lecture successfully combined rigorous mathematical explanations
+            with intuitive visualizations and practical examples, making
+            advanced concepts easier to understand. Overall, the presentation
+            showed how generative AI is becoming increasingly important for
+            future EO systems, particularly in applications such as synthetic
+            data generation, uncertainty estimation, image enhancement, and
+            multimodal representation learning.
+          </p>
+
+          <h3 class="text-xl font-medium text-white mt-8 mb-4">
+            ESA Φ-lab and the GeoFM Challenge
+          </h3>
+          <p class="leading-relaxed mb-4">
+            A particularly valuable session during the AI4EO Spring School 2026
+            was the presentation of the “Reaching New Heights with GeoFM”
+            challenge by ESA Φ-lab in collaboration with the International
+            Telecommunication Union (ITU) and AI for Good. More information
+            about the challenge can be found on the official website:
+            <a href="https://platform.ai4eo.eu/geoai" class="text-accent-400 hover:text-accent-300 transition-colors">
+              ESA GeoFM Challenge Website
+            </a>
+          </p>
+          <p class="leading-relaxed mb-4">
+            The challenge focuses on the use of Geospatial Foundation Models
+            (GFMs) for large-scale Earth Observation applications. The main
+            objective is to investigate how pretrained geospatial embeddings
+            generated by modern foundation models such as AlphaEarth, Tessera,
+            TerraMind, and THOR can be combined in order to perform semantic
+            segmentation and height estimation tasks. More specifically,
+            participants are asked to develop AI models capable of detecting
+            buildings and vegetation while simultaneously estimating their
+            heights using openly accessible satellite imagery.
+          </p>
+          <p class="leading-relaxed mb-4">
+            What made the challenge especially relevant was its strong
+            connection to real-world Earth Observation problems. Traditionally,
+            highly accurate Digital Surface Models (DSM) and Digital Terrain
+            Models (DTM) rely on expensive airborne LiDAR campaigns, which are
+            not available worldwide. The GeoFM challenge therefore explores
+            whether scalable AI-driven alternatives can be created using only
+            publicly available EO data.
+          </p>
+          <p class="leading-relaxed mb-8">
+            The presentation clearly demonstrated how modern Earth Observation
+            research is increasingly shifting toward multimodal AI systems and
+            transferable geospatial embeddings instead of traditional
+            handcrafted workflows. It also highlighted how foundation models are
+            becoming universal feature extractors for remote sensing
+            applications. Overall, the challenge provided a very good overview
+            of current research directions in GeoAI and illustrated how strongly
+            Earth Observation is evolving toward large-scale AI-driven
+            infrastructures for environmental monitoring, urban analysis, and
+            climate-related applications.
+          </p>
+
+          <h2 class="text-2xl font-semibold text-white mt-12 mb-6">
+            Learning Outcomes
+          </h2>
+          <p class="leading-relaxed mb-4">
+            Overall, the AI4EO Spring School 2026 provided an excellent overview
+            of current developments in Artificial Intelligence for Earth
+            Observation. One of the most valuable aspects of the event was the
+            successful combination of theoretical lectures, practical notebook
+            sessions, reproducible workflows, and interdisciplinary discussions.
+          </p>
+          <p class="leading-relaxed mb-4">
+            Several major scientific trends became especially visible throughout
+            the Spring School. These included the rapid emergence of foundation
+            models, the increasing importance of multimodal EO embeddings, the
+            growing role of generative AI, and the necessity of ethical and
+            reproducible AI development.
+          </p>
+          <p class="leading-relaxed mb-8">
+            The practical coding sessions significantly strengthened the
+            educational value of the event because participants were able to
+            directly interact with state-of-the-art machine-learning methods and
+            geospatial AI infrastructures. In addition, the Spring School
+            created an excellent environment for scientific exchange between
+            researchers, students, and practitioners from diverse backgrounds.
+          </p>
+
+          <h2 class="text-2xl font-semibold text-white mt-12 mb-6">
+            Conclusion and Recommendations
+          </h2>
+          <p class="leading-relaxed mb-4">
+            In conclusion, the AI4EO Spring School 2026 was exceptionally well
+            organised and scientifically highly valuable. The event successfully
+            combined theoretical depth, practical implementation, and
+            interdisciplinary discussion within a rapidly evolving research
+            field.
+          </p>
+          <p class="leading-relaxed mb-4">
+            Particularly successful aspects included the balance between
+            advanced scientific lectures and practical implementation, the
+            strong emphasis on reproducibility and open science, and the
+            integration of modern AI methods such as foundation models and flow
+            matching into Earth Observation workflows.
+          </p>
+          <p class="leading-relaxed mb-12">
+            The Spring School clearly demonstrated how rapidly GeoAI is evolving
+            and how important interdisciplinary collaboration has become within
+            modern Earth Observation research. Similar Spring Schools should
+            definitely continue to be organised in the future because they
+            provide an outstanding platform for scientific exchange, practical
+            learning, and discussion of emerging challenges in Artificial
+            Intelligence for Earth Observation.
+          </p>
+        </div>
+        <div class="mt-16 mb-8 w-full max-w-5xl mx-auto">
+          <div class="mb-8">
+            <p class="text-[13px] font-bold tracking-[0.2em] uppercase text-cyan-400 mb-2">
+              Speakers
+            </p>
+            <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-white">
+              Leading Experts in AI &amp; Earth Observation
+            </h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Card 1 -->
+            <div class="bg-[#151D2E]/80 backdrop-blur-sm border border-white/5 hover:border-white/10 transition-colors rounded-[16px] p-5 flex flex-col cursor-pointer group">
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg text-white mb-4 bg-teal-600">
+                NA
+              </div>
+              <h3 class="font-semibold text-white mb-1 group-hover:text-teal-400 transition-colors">
+                Nicolas Audebert
+              </h3>
+              <p class="text-[13px] text-slate-400 mb-6 flex-1 leading-relaxed">
+                Research Scientist, IGN / LASTIG Lab
+              </p>
+              <div>
+                <span class="inline-flex px-2 py-1 border rounded text-[10px] font-medium text-teal-400 border-teal-500/30 bg-teal-500/10">
+                  Generative Models
+                </span>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-[#151D2E]/80 backdrop-blur-sm border border-white/5 hover:border-white/10 transition-colors rounded-[16px] p-5 flex flex-col cursor-pointer group">
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg text-white mb-4 bg-purple-600">
+                PG
+              </div>
+              <h3 class="font-semibold text-white mb-1 group-hover:text-purple-400 transition-colors">
+                Pedram Ghamisi
+              </h3>
+              <p class="text-[13px] text-slate-400 mb-6 flex-1 leading-relaxed">
+                Professor &amp; Head of Responsible AI Group, HZDR &amp;
+                Lancaster University
+              </p>
+              <div>
+                <span class="inline-flex px-2 py-1 border rounded text-[10px] font-medium text-purple-400 border-purple-500/30 bg-purple-500/10">
+                  Responsible AI
+                </span>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-[#151D2E]/80 backdrop-blur-sm border border-white/5 hover:border-white/10 transition-colors rounded-[16px] p-5 flex flex-col cursor-pointer group">
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg text-white mb-4 bg-sky-600">
+                PA
+              </div>
+              <h3 class="font-semibold text-white mb-1 group-hover:text-sky-400 transition-colors">
+                Pierre Adorni
+              </h3>
+              <p class="text-[13px] text-slate-400 mb-6 flex-1 leading-relaxed">
+                PhD Candidate, IRISA / Université Bretagne Sud
+              </p>
+              <div>
+                <span class="inline-flex px-2 py-1 border rounded text-[10px] font-medium text-sky-400 border-sky-500/30 bg-sky-500/10">
+                  Foundation Models
+                </span>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-[#151D2E]/80 backdrop-blur-sm border border-white/5 hover:border-white/10 transition-colors rounded-[16px] p-5 flex flex-col cursor-pointer group">
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg text-white mb-4 bg-orange-600">
+                AS
+              </div>
+              <h3 class="font-semibold text-white mb-1 group-hover:text-orange-400 transition-colors">
+                Adam J. Stewart
+              </h3>
+              <p class="text-[13px] text-slate-400 mb-6 flex-1 leading-relaxed">
+                Postdoctoral Researcher, TU Munich (Chair of Data Science in EO)
+              </p>
+              <div>
+                <span class="inline-flex px-2 py-1 border rounded text-[10px] font-medium text-orange-400 border-orange-500/30 bg-orange-500/10">
+                  MLOps / TorchGeo
+                </span>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-[#151D2E]/80 backdrop-blur-sm border border-white/5 hover:border-white/10 transition-colors rounded-[16px] p-5 flex flex-col cursor-pointer group">
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg text-white mb-4 bg-cyan-600">
+                SM
+              </div>
+              <h3 class="font-semibold text-white mb-1 group-hover:text-cyan-400 transition-colors">
+                Stéphane May
+              </h3>
+              <p class="text-[13px] text-slate-400 mb-6 flex-1 leading-relaxed">
+                Research Engineer, CNES (French Space Agency)
+              </p>
+              <div>
+                <span class="inline-flex px-2 py-1 border rounded text-[10px] font-medium text-cyan-400 border-cyan-500/30 bg-cyan-500/10">
+                  Foundation Models
+                </span>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-[#151D2E]/80 backdrop-blur-sm border border-white/5 hover:border-white/10 transition-colors rounded-[16px] p-5 flex flex-col cursor-pointer group">
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg text-white mb-4 bg-pink-600">
+                IG
+              </div>
+              <h3 class="font-semibold text-white mb-1 group-hover:text-pink-400 transition-colors">
+                Iris de Gélis
+              </h3>
+              <p class="text-[13px] text-slate-400 mb-6 flex-1 leading-relaxed">
+                Research Engineer, Estellus / Paris Observatory (LIRA)
+              </p>
+              <div>
+                <span class="inline-flex px-2 py-1 border rounded text-[10px] font-medium text-pink-400 border-pink-500/30 bg-pink-500/10">
+                  3D Change Detection
+                </span>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="bg-[#151D2E]/80 backdrop-blur-sm border border-white/5 hover:border-white/10 transition-colors rounded-[16px] p-5 flex flex-col cursor-pointer group">
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg text-white mb-4 bg-indigo-600">
+                WY
+              </div>
+              <h3 class="font-semibold text-white mb-1 group-hover:text-indigo-400 transition-colors">
+                Weikang Yu
+              </h3>
+              <p class="text-[13px] text-slate-400 mb-6 flex-1 leading-relaxed">
+                PhD Researcher, HZDR / TU Munich
+              </p>
+              <div>
+                <span class="inline-flex px-2 py-1 border rounded text-[10px] font-medium text-indigo-400 border-indigo-500/30 bg-indigo-500/10">
+                  Responsible AI
+                </span>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="bg-[#151D2E]/80 backdrop-blur-sm border border-white/5 hover:border-white/10 transition-colors rounded-[16px] p-5 flex flex-col cursor-pointer group">
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg text-white mb-4 bg-yellow-600">
+                SL
+              </div>
+              <h3 class="font-semibold text-white mb-1 group-hover:text-yellow-400 transition-colors">
+                Sébastien Lefèvre
+              </h3>
+              <p class="text-[13px] text-slate-400 mb-6 flex-1 leading-relaxed">
+                Full Professor, Université Bretagne Sud / ESA Phi-lab Visiting
+                Professor
+              </p>
+              <div>
+                <span class="inline-flex px-2 py-1 border rounded text-[10px] font-medium text-yellow-400 border-yellow-500/30 bg-yellow-500/10">
+                  Organizer &amp; Chair
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-20 w-full bg-[#060A16] border border-white/5 rounded-[24px] overflow-hidden flex flex-col shadow-2xl relative">
+          <div class="p-8 md:p-12 z-10 relative">
+            <h4 class="text-[11px] font-bold tracking-[0.3em] uppercase text-slate-500/80 mb-10 text-center">
+              Co-Organizers
+            </h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
+              <div class="border border-cyan-500/20 rounded-xl p-5 flex flex-col items-center justify-center text-center bg-[#0B1221]/50 backdrop-blur-sm hover:border-cyan-500/40 transition-colors">
+                <span class="text-cyan-400 font-semibold text-sm mb-1.5">
+                  OBELIX Group
+                </span>
+                <span class="text-slate-500 text-xs">
+                  IRISA / Université Bretagne Sud
+                </span>
+              </div>
+              <div class="border border-[#7C3AED]/30 rounded-xl p-5 flex flex-col items-center justify-center text-center bg-[#0B1221]/50 backdrop-blur-sm hover:border-[#7C3AED]/50 transition-colors">
+                <span class="text-[#A78BFA] font-semibold text-sm mb-1.5">
+                  EMJM Copernicus Master in Digital Earth
+                </span>
+                <span class="text-slate-500 text-xs">
+                  Erasmus Mundus Joint Master
+                </span>
+              </div>
+              <div class="border border-emerald-500/20 rounded-xl p-5 flex flex-col items-center justify-center text-center bg-[#0B1221]/50 backdrop-blur-sm hover:border-emerald-500/40 transition-colors">
+                <span class="text-emerald-400 font-semibold text-sm mb-1.5">
+                  Cluster SequolA – PANORAMIX Chair
+                </span>
+                <span class="text-slate-500 text-xs">AI Research Cluster</span>
+              </div>
+              <div class="border border-yellow-500/20 rounded-xl p-5 flex flex-col items-center justify-center text-center bg-[#0B1221]/50 backdrop-blur-sm hover:border-yellow-500/40 transition-colors">
+                <span class="text-yellow-400 font-semibold text-sm mb-1.5">
+                  ESA Phi-lab
+                </span>
+                <span class="text-slate-500 text-xs">
+                  European Space Agency
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="border-t border-white/5 bg-[#030610]/80 p-6 flex flex-col lg:flex-row items-center justify-between gap-6 z-10 relative">
+            <div class="flex items-center gap-3 shrink-0">
+              <svg class="w-5 h-5 text-cyan-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m13.5 6.5-3.148-3.148a1.205 1.205 0 0 0-1.704 0L6.352 5.648a1.205 1.205 0 0 0 0 1.704L9.5 10.5"></path>
+                <path d="M16.5 7.5 19 5"></path>
+                <path d="m17.5 10.5 3.148 3.148a1.205 1.205 0 0 1 0 1.704l-2.296 2.296a1.205 1.205 0 0 1-1.704 0L13.5 14.5"></path>
+                <path d="M9 21a6 6 0 0 0-6-6"></path>
+                <path d="M9.352 10.648a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l4.296-4.296a1.205 1.205 0 0 0 0-1.704l-2.296-2.296a1.205 1.205 0 0 0-1.704 0z"></path>
+              </svg>
+              <span class="font-bold text-lg tracking-tighter flex items-center">
+                <span class="text-red-500">A</span>
+                <span class="text-yellow-400">I</span>
+                <span class="text-cyan-400">4</span>
+                <span class="text-orange-500">E</span>
+                <span class="text-orange-500">O</span>
+                <span class="text-white ml-2 tracking-normal text-base">
+                  Spring School 2026
+                </span>
+              </span>
+            </div>
+
+            <div class="flex flex-wrap justify-center items-center gap-4 text-slate-500 font-mono text-[10px] md:text-xs uppercase tracking-widest">
+              <div class="flex items-center gap-2">
+                <svg class="w-4 h-4 opacity-70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                  <line x1="16" x2="16" y1="2" y2="6"></line>
+                  <line x1="8" x2="8" y1="2" y2="6"></line>
+                  <line x1="3" x2="21" y1="10" y2="10"></line>
+                </svg>
+                April 8-10, 2026
+              </div>
+              <span class="opacity-30 hidden md:block">-</span>
+              <div class="flex items-center gap-2">
+                <svg class="w-4 h-4 opacity-70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Université Bretagne Sud, Vannes, France
+              </div>
+            </div>
+
+            <div class="text-slate-500 shrink-0 font-mono text-[10px] md:text-xs uppercase tracking-widest text-center mt-4 lg:mt-0">
+              Free • Upon Admission • 3 ECTS
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
 </body></html>
