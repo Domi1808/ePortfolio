@@ -21,18 +21,19 @@
                   },
                   colors: {
                       navy: {
-                          900: '#0B1121',
-                          950: '#020617', // Main background
+                          900: '#071B44',
+                          950: '#020817',
                       },
                       accent: {
-                          400: '#60A5FA', // Vivid blue
-                          500: '#3B82F6',
-                          600: '#2563EB',
+                          300: '#8FB5FF',
+                          400: '#5B8CFF',
+                          500: '#1E4ED8',
+                          600: '#1e3a8a',
                       }
                   },
                   boxShadow: {
                       'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
-                      'glow': '0 0 40px -10px rgba(59, 130, 246, 0.3)',
+                      'glow': '0 0 40px -10px rgba(91, 140, 255, 0.3)',
                   }
               }
           }
@@ -42,37 +43,35 @@
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-      /* Custom scrollbar for webkit */
       ::-webkit-scrollbar {
           width: 8px;
       }
       ::-webkit-scrollbar-track {
-          background: #020617;
+          background: #020817;
       }
       ::-webkit-scrollbar-thumb {
-          background: #1e293b;
+          background: #1E4ED8;
           border-radius: 4px;
       }
       ::-webkit-scrollbar-thumb:hover {
-          background: #334155;
+          background: #5B8CFF;
       }
 
       .glass-card {
-          background: rgba(15, 23, 42, 0.6);
+          background: rgba(7, 27, 68, 0.5);
           backdrop-filter: blur(12px);
           -webkit-backdrop-filter: blur(12px);
-          border: 1px solid rgba(255, 255, 255, 0.08);
+          border: 1px solid rgba(143, 181, 255, 0.1);
       }
 
       .glass-nav {
-          background: rgba(2, 6, 23, 0.7);
+          background: rgba(2, 8, 23, 0.7);
           backdrop-filter: blur(16px);
-          border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+          border-bottom: 1px solid rgba(30, 78, 216, 0.3);
       }
 
-      /* Gradient Text */
       .text-gradient {
-          background: linear-gradient(to right, #ffffff, #94a3b8);
+          background: linear-gradient(to right, #ffffff, #8FB5FF);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
       }
@@ -163,88 +162,38 @@
     </style><link id="all-fonts-link-font-dm-sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-dm-sans">
       .font-dm-sans { font-family: 'DM Sans', sans-serif !important; }
     </style></head>
-  <body class="font-sans antialiased selection:bg-accent-500/30 selection:text-white overflow-x-hidden bg-navy-950 text-slate-300">
-
-
-
-
-
-
-
-<!-- Background (component) added by Aura -->
-<div class="aura-background-component fixed top-0 w-full h-screen -z-10 brightness-50" data-alpha-mask="80" style="; mask-image: linear-gradient(to bottom, transparent, black 0%, black 80%, transparent); -webkit-mask-image: linear-gradient(to bottom, transparent, black 0%, black 80%, transparent)"><div data-us-project="bmaMERjX2VZDtPrh4Zwx" class="absolute w-full h-full left-0 top-0 -z-10"></div>
-<script type="text/javascript">
-  !function(){if(!window.UnicornStudio){window.UnicornStudio={isInitialized:!1};var i=document.createElement("script");i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.34/dist/unicornStudio.umd.js",i.onload=function(){window.UnicornStudio.isInitialized||(UnicornStudio.init(),window.UnicornStudio.isInitialized=!0)},(document.head || document.body).appendChild(i)}}();
-</script></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <canvas width="1440" height="712" style="display: block; width: 1440px; height: 712px" class=""></canvas>
+  <body class="font-sans antialiased selection:bg-[#5B8CFF]/30 selection:text-white overflow-x-hidden bg-[#071B44] bg-fixed text-slate-300 min-h-screen">
+    <canvas width="1440" height="712" style="display: block; width: 1440px; height: 712px" class="fixed top-0 left-0 w-full h-full pointer-events-none -z-10"></canvas>
 
     <!-- Background Ambience -->
-    <div class="fixed inset-0 z-0 pointer-events-none">
-      <!-- Top center blue glow -->
-      <div class="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[600px] rounded-full blur-[120px] bg-accent-600/10"></div>
-      <!-- Bottom right teal/blue glow -->
-      <div class="absolute bottom-0 right-0 w-[600px] h-[600px] rounded-full blur-[100px] bg-teal-900/10"></div>
-      <!-- Grid pattern overlay -->
-      <div class="absolute inset-0 opacity-[0.03] bg-cover bg-center bg-[url(https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/bd33fee2-5b7b-48e8-ac44-62d8eb948494_3840w.png?w=800&amp;q=80)]"></div>
+    <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1464802686167-b939a6910659?auto=format&amp;fit=crop&amp;w=2000&amp;q=80'); background-attachment: fixed; background-position: center; background-size: cover; background-repeat: no-repeat;">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(91,140,255,0.05)_0%,rgba(7,27,68,0.95)_100%)] z-10"></div>
+      <div class="absolute top-[-20%] left-[5%] w-[45vw] h-[120vh] rounded-[100%] blur-[120px] bg-[#1E4ED8]/30 rotate-[15deg]"></div>
+      <div class="absolute top-[10%] right-[5%] w-[45vw] h-[90vh] rounded-[100%] blur-[130px] bg-[#5B8CFF]/20 rotate-[-15deg]"></div>
+      <div class="absolute top-[20%] left-1/2 -translate-x-1/2 w-[60vw] h-[60vh] rounded-full blur-[150px] bg-[#8FB5FF]/25"></div>
+      <div class="absolute inset-0 opacity-[0.15] mix-blend-overlay z-20" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');"></div>
     </div>
 
     <!-- LOGO BAR -->
-    <div class="relative z-50 w-full border-b backdrop-blur-sm border-white/5 bg-navy-950/80">
-      <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap justify-center items-center gap-8 md:gap-16">
-        <!-- Logo 1: PLUS -->
-        <div class="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
-          <div class="transition-colors flex rounded px-3 py-1.5 shadow-lg items-center hover:bg-white shadow-white/5 bg-slate-900/95">
-            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/ff50a4ac-a8a7-43ff-bf26-80362192eaa2_320w.png" alt="PLUS University of Salzburg" class="h-6 w-auto object-contain">
-          </div>
-        </div>
-
-        <!-- Logo 2: UBS -->
-        <div class="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
-          <div class="transition-colors flex rounded px-3 py-1.5 shadow-lg items-center hover:bg-white shadow-white/5 bg-slate-900/95">
-            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c30f944d-868f-47a3-bb74-25ece561bc09_320w.png" alt="UBS Université Bretagne Sud" class="w-auto h-6 object-cover">
-          </div>
-        </div>
-
-        <!-- Logo 3: CDE -->
-        <div class="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
-          <div class="transition-colors flex rounded px-3 py-1.5 shadow-lg items-center hover:bg-white shadow-white/5 bg-slate-900/95">
-            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/d1f74c8f-11a5-4a0f-b2f6-4fca89c69c23_800w.png" alt="Copernicus Master in Digital Earth" class="h-6 w-auto object-cover">
-          </div>
-        </div>
-
-        <!-- Logo 4: New Image Spot -->
-        <div class="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
-          <div class="transition-colors flex rounded px-3 py-1.5 shadow-lg items-center hover:bg-white shadow-white/5 bg-slate-900/95">
-            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/803891ce-4ab6-434a-9ead-228933a0d50b_320w.png" alt="New Partner Logo" class="h-6 w-auto object-contain">
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- NAVIGATION -->
-    <nav class="sticky glass-nav transition-all duration-300 w-full z-40 top-0">
-      <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <nav class="sticky transition-all duration-300 w-full z-50 top-0 bg-[#020817]/60 backdrop-blur-xl border-b border-[#1E4ED8]/30 shadow-[0_0_20px_rgba(30,78,216,0.15)]">
+      <div class="max-w-7xl mx-auto px-6 h-16 md:h-20 flex items-center justify-between md:justify-start">
         <!-- Left Icon -->
-        <a href="#" class="flex items-center gap-2 group">
-          <div class="w-8 h-8 rounded-full flex items-center justify-center group-hover:bg-accent-500/20 transition-colors border bg-white/10 border-white/10">
-            <span class="font-semibold text-sm text-white">DT</span>
+        <div class="hidden md:flex gap-x-6 items-center ml-5 lg:ml-8">
+          <div class="flex items-center shrink-0">
+            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/ff50a4ac-a8a7-43ff-bf26-80362192eaa2_320w.png" alt="PLUS" class="h-7 md:h-8 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity">
           </div>
-        </a>
+          <div class="flex items-center shrink-0">
+            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c30f944d-868f-47a3-bb74-25ece561bc09_320w.png" alt="UBS" class="h-7 md:h-8 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity">
+          </div>
+          <div class="flex items-center shrink-0">
+            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/3acf91eb-09e2-43f7-8560-19114cf4ba37_1600w.png" alt="CDE" class="h-7 md:h-8 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity">
+          </div>
+          <div class="flex items-center shrink-0">
+            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/982afb90-27fa-47be-9c55-7803517a6346_1600w.png" alt="EU Partner" class="h-7 md:h-8 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity">
+          </div>
+        </div>
 
         <!-- Desktop Menu -->
         <div class="hidden md:flex gap-x-8 gap-y-8 items-center">
@@ -257,7 +206,7 @@
           <!-- CV Link Added -->
           <a href="https://drive.google.com/file/d/1PSaRSaDAzWj84D9Yq4_AIHHCD9ewmQij/view?usp=sharing" class="transition-colors flex items-center gap-1 text-sm font-medium hover:text-white text-slate-300">
             CV
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" aria-hidden="true" class="lucide lucide-external-link opacity-50 w-[12px] h-[12px]" data-icon-replaced="true" style="width: 12px; height: 12px; color: rgb(255, 255, 255);"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" aria-hidden="true" class="lucide lucide-external-link opacity-50 w-[12px] h-[12px]" data-icon-replaced="true" style="width: 12px; height: 12px; color: rgb(255, 255, 255)"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
           </a>
           <a href="#coursework" class="text-sm font-medium transition-colors text-slate-300 hover:text-white">
             Services
@@ -271,48 +220,53 @@
         </div>
 
         <!-- Mobile Menu Toggle -->
-        <button class="md:hidden text-slate-300 hover:text-white">
+        <button class="md:hidden text-slate-300 hover:text-white ml-auto shrink-0">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="menu" aria-hidden="true" class="lucide lucide-menu w-6 h-6"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
         </button>
       </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <section class="min-h-[75vh] flex flex-col text-center z-10 pt-12 px-6 pb-20 relative items-center justify-start">
-      <!-- Badge -->
-      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent-500/10 border border-accent-500/20 mb-8 animate-[fadeIn_1s_ease-out]">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="sparkles" aria-hidden="true" class="lucide lucide-sparkles w-3 h-3 text-accent-400"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>
-        <span class="text-xs font-semibold tracking-wide uppercase text-accent-400">
+    <section class="flex flex-col text-center z-10 px-6 pb-12 relative items-center min-h-[75vh] pt-8 justify-start">
+      <div class="inline-flex items-center gap-2.5 px-6 py-2 rounded-full bg-[rgba(10,25,60,0.65)] backdrop-blur-md border border-[#3B82F6] shadow-[0_0_15px_rgba(59,130,246,0.3)] mb-8">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-[#3B82F6]">
+          <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+          <circle cx="5" cy="18" r="1.5" fill="currentColor" stroke="none"></circle>
+        </svg>
+        <span class="text-xs md:text-sm font-medium tracking-[0.2em] uppercase text-[#BFD7FF]" style="text-shadow: 0 0 12px rgba(191,215,255,0.4);">
           Copernicus Master in Digital Earth
         </span>
       </div>
+      <!-- Badge -->
+      
 
       <!-- Title -->
-      <h1 class="md:text-7xl leading-[1.1] text-5xl font-semibold tracking-tight mb-4 drop-shadow-2xl text-white">
-        Dominik Tabernig
-      </h1>
+      <h1 class="text-5xl md:text-7xl lg:text-[80px] leading-tight font-semibold tracking-tight mb-4 text-white drop-shadow-[0_4px_16px_rgba(0,0,0,0.8)]">Dominik Tabernig</h1>
 
       <!-- Subtitle -->
-      <p class="md:text-2xl text-xl font-light tracking-tight text-slate-50">
+      <p class="text-xl md:text-[22px] font-medium tracking-[0.1em] text-[#F3F7FF] mb-4 drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)]" style="text-shadow: 0 0 15px rgba(243, 247, 255, 0.3);">
         Welcome to my ePortfolio
       </p>
 
       <!-- Tagline -->
-      <p class="text-sm md:text-base font-medium tracking-widest uppercase mb-8 text-accent-400">
+      <p class="text-xs md:text-sm font-medium tracking-[0.2em] uppercase mb-8 text-[#F3F7FF] drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)]" style="text-shadow: 0 0 15px rgba(243, 247, 255, 0.3);">
         Earth Observation • Remote Sensing • Digital Earth
       </p>
 
       <!-- Paragraph -->
-      <p class="leading-relaxed text-lg text-slate-400 max-w-2xl mb-10">
+      <p class="leading-relaxed text-base md:text-lg font-medium text-[#F3F7FF]/90 max-w-2xl mx-auto mb-12 drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)]" style="text-shadow: 0 0 15px rgba(243, 247, 255, 0.2);">
         This ePortfolio provides an overview of my academic work and
         professional development during my studies in the Copernicus Master in
         Digital Earth (CDE).
       </p>
 
       <!-- CTA -->
-      <a href="#about" class="group relative inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-medium shadow-[0_0_20px_-5px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_-5px_rgba(255,255,255,0.5)] transition-all hover:-translate-y-0.5 bg-white text-navy-950">
+      <a href="#about" class="group relative inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-medium text-sm transition-all bg-white text-[#020817] hover:bg-slate-100 hover:scale-105 shadow-[0_0_30px_-5px_rgba(255,255,255,0.4)]">
         Learn More
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-down" aria-hidden="true" class="lucide lucide-arrow-down w-4 h-4 transition-transform group-hover:translate-y-1"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 transition-transform group-hover:translate-y-1">
+          <path d="M12 5v14"></path>
+          <path d="m19 12-7 7-7-7"></path>
+        </svg>
       </a>
     </section>
 
@@ -398,7 +352,7 @@
                 Copernicus Master in Digital Earth
               </h4>
               <p class="text-sm mb-1 text-accent-400">2023 – Present</p>
-              <p class="text-sm leading-relaxed text-slate-400">
+              <p class="leading-relaxed text-sm text-slate-200">
                 Specialization: GeoData Science (PLUS) &amp; Geo-Intelligence
                 (UBS). Focus on advanced EO data analysis, machine learning, and
                 spatial modelling.
@@ -410,8 +364,8 @@
               <h4 class="text-lg font-medium text-white">
                 Bachelor of Science in Geography
               </h4>
-              <p class="text-sm text-slate-400 mb-1">2019 – 2023</p>
-              <p class="leading-relaxed text-sm text-slate-400">
+              <p class="text-sm text-slate-200 mb-1">2019 – 2023</p>
+              <p class="leading-relaxed text-sm text-slate-200">
                 University of Salzburg. Thesis on Alpine snow remote sensing
                 applications.
               </p>
@@ -436,7 +390,7 @@
               <div class="absolute -left-[39px] top-1.5 w-5 h-5 rounded-full border bg-navy-950 border-white/30"></div>
               <h4 class="text-lg font-medium text-white">Chef de Partie</h4>
               <p class="text-sm mb-1 text-emerald-400">2022-Present</p>
-              <p class="text-sm text-slate-400">Stiegl Brauwelt, Salzburg</p>
+              <p class="text-sm text-slate-200">Stiegl Brauwelt, Salzburg</p>
             </div>
             <!-- Item 2 -->
             <div class="relative">
@@ -444,8 +398,8 @@
               <h4 class="text-lg font-medium text-white">
                 Emergency Medical Technician
               </h4>
-              <p class="text-sm text-slate-400 mb-1">2019 – 2020</p>
-              <p class="text-sm text-slate-400">Austrian Armed Forces</p>
+              <p class="text-sm text-slate-200 mb-1">2019 – 2020</p>
+              <p class="text-sm text-slate-200">Austrian Armed Forces</p>
             </div>
           </div>
         </section>
@@ -839,7 +793,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="border-t backdrop-blur-lg pt-16 pb-8 border-white/5 bg-navy-900/50">
+    <footer class="border-t backdrop-blur-lg pt-16 pb-8 border-[#1E4ED8]/20 bg-[#020817]/80">
       <div class="max-w-6xl mr-auto ml-auto pr-6 pl-6">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           <!-- Col 1 -->
@@ -895,16 +849,16 @@
         <!-- PARTNER LOGOS SECTION -->
         <div class="flex mb-12 justify-center gap-8 flex-wrap">
           <!-- University of Salzburg -->
-          <div class="hover:opacity-100 transition-opacity opacity-90 rounded-xl px-4 py-4 bg-slate-900">
-            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/bf9dd540-3e6d-4c82-af75-8f410a61663c_320w.png" alt="University of Salzburg Logo" class="md:h-20 bg-center opacity-80 w-auto h-16 object-cover">
+          <div class="hover:opacity-100 transition-opacity opacity-90 rounded-xl px-4 py-4 bg-[#020817]/50 backdrop-blur-md border border-white/5">
+            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/84186115-10b5-4a3d-94d3-efc746d4cbb5_1600w.png?w=800&amp;q=80" alt="University of Salzburg Logo" class="md:h-20 bg-center opacity-80 w-auto h-16 object-cover">
           </div>
           <!-- UBS Bretagne Sud -->
-          <div class="hover:opacity-100 transition-opacity flex opacity-90 rounded-xl pt-4 pr-4 pb-4 pl-4 items-center bg-slate-900">
-            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/aaad6eb2-075e-417b-b21c-2f6caa527050_320w.png" alt="Université Bretagne Sud Logo" class="md:h-20 opacity-80 w-auto h-16 object-contain rotate-x-5">
+          <div class="hover:opacity-100 transition-opacity flex opacity-90 rounded-xl px-4 py-4 items-center bg-[#020817]/50 backdrop-blur-md border border-white/5">
+            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/aabed9fb-b092-4925-8cbf-956e29b05e65_1600w.png" alt="Université Bretagne Sud Logo" class="md:h-20 opacity-80 w-auto h-16 object-contain rotate-x-5">
           </div>
           <!-- New Logo Spot -->
-          <div class="hover:opacity-100 transition-opacity flex opacity-80 rounded-xl px-4 py-4 items-center bg-slate-900">
-            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4d910253-cea5-4798-b1f9-c67f48dc9f23_800w.png" alt="Partner Logo" class="md:h-20 opacity-80 w-auto h-16 object-contain">
+          <div class="hover:opacity-100 transition-opacity flex opacity-80 rounded-xl px-4 py-4 items-center bg-[#020817]/50 backdrop-blur-md border border-white/5">
+            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/32e6e80a-678a-4397-8c70-c25afe99c884_1600w.png" alt="Partner Logo" class="md:h-20 opacity-80 w-auto h-16 object-contain">
           </div>
         </div>
 
@@ -930,9 +884,9 @@
       });
     </script>
 
-    <div id="ai4eo-modal" class="hidden fixed inset-0 z-[100] flex justify-center bg-navy-950/95 backdrop-blur-xl overflow-y-auto">
+    <div id="ai4eo-modal" class="hidden fixed inset-0 z-[100] flex justify-center bg-[#071B44]/95 backdrop-blur-xl overflow-y-auto">
       <div class="fixed top-6 right-6 z-[110]">
-        <button onclick="document.getElementById('ai4eo-modal').classList.add('hidden')" class="text-slate-300 hover:text-white p-3 glass-card rounded-full bg-navy-900/50 hover:bg-navy-800 transition-colors">
+        <button onclick="document.getElementById('ai4eo-modal').classList.add('hidden')" class="text-slate-300 hover:text-white p-3 glass-card rounded-full bg-[#020817]/80 hover:bg-[#1E4ED8]/50 transition-colors">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
             <path d="M18 6 6 18"></path>
             <path d="m6 6 12 12"></path>
